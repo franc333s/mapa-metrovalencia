@@ -1,0 +1,26 @@
+{
+  "name": "mapa-metrovalencia",
+  "version": "1.0.0",
+  "description": "MetroValència map developed in html and scss.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run serve & npm run compile",
+    "serve": "web-dev-server --node-resolve --open --watch",
+    "compile": "sass --watch scss/global.scss:css/global.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franc333s/mapa-metrovalencia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franc333s/mapa-metrovalencia/issues"
+  },
+  "homepage": "https://github.com/franc333s/mapa-metrovalencia#readme",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6",
+    "sass": "^1.97.1"
+  }
+}
