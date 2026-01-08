@@ -1,0 +1,226 @@
+@use "variables" as *;
+
+.info-icon-dot {
+  position: relative;
+  background-color: $color-corporative-red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50rem;
+  overflow: visible; 
+  margin-top: 0.25rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: $color-full-white;
+    border-radius: 50%;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background-color: $color-full-white;
+    border-radius: 1px;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.m-icon {
+    color: $color-full-white;
+    background-color: $color-corporative-red;
+    font-family: $font-primary;
+    font-weight: $font-bold;
+    border-radius: 100px;
+    padding: 4px 1px 2px 8px;    
+}
+
+.p-icon {
+    color: $color-full-white;
+    background-color: #0173A7;
+    font-family: $font-primary;
+    font-weight: $font-bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: 2px 6px;    
+}
+
+.pasarela-icon {
+  background-color: $color-full-white;
+  width: 4rem;
+  height: .5rem;
+  border-top: 3px solid $color-full-black;
+  border-bottom: 3px solid $color-full-black;
+}
+
+.pasarela-wip-icon {
+  background-color: $color-full-white;
+  width: 4rem;
+  height: .5rem;
+  border-top: 3px dashed $color-full-black;
+  border-bottom: 3px dashed $color-full-black;
+}
+
+.pasarela-tram-icon {
+  background-color: $color-full-white;
+  width: 4rem;
+  height: .5rem;
+  border-top: 3px solid $color-line-4b;
+  border-bottom: 3px solid $color-line-4b;
+}
+
+.parada-comp-icon {
+  background-color: $color-full-white;
+  width: 3.5rem;
+  height: .6rem;
+  border: 2.5px solid $color-full-black;
+  border-radius: 12px;
+}
+
+
+.conexion-ferr-icon {
+  position: relative;
+  width: .8rem;
+  height: .2rem;
+  background-color: $color-full-white;
+  border-top: 2.5px solid $color-full-black;
+  border-bottom: 2.5px solid $color-full-black;
+  display: inline-block;
+  top: -0.1rem;
+  left: 1.44rem;
+
+  &::before {
+    content: "";
+    background-color: $color-full-white;
+    width: 1.5rem;
+    height: .8rem;
+    border: 2.5px solid $color-full-black;
+    border-radius: 12px;
+    position: absolute;
+    top: -0.45rem;
+    left: -1.6rem;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    background-color: $color-full-white;
+    width: 1.5rem;
+    height: .8rem;
+    border: 2.5px solid $color-full-black;
+    border-radius: 12px;
+    position: absolute;
+    top: -0.45rem;
+    right: -1.6rem;
+    z-index: -1;
+  }
+}
+
+.conexion-inter-icon {
+  position: relative;
+
+  .left {
+    background-color: $color-full-white;
+    width: 2.2rem;
+    height: 1.1rem;
+    border: 2.5px solid $color-full-black;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: .8rem;
+      height: .8rem;
+      background-color: $color-line-2;
+      border-radius: 12px;
+      top: .15rem;
+      left: .2rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: .8rem;
+      height: .8rem;
+      background-color: $color-line-1b;
+      border-radius: 12px;
+      top: .15rem;
+      right: .2rem;
+    }
+  }
+
+  .right {
+    background-color: $color-line-4c;
+    width: .8rem;
+    height: .8rem;
+    border: 2.5px solid $color-full-white;
+    box-shadow: 0 0 0 2.5px $color-full-black;
+    border-radius: 12px;
+    position: absolute;
+    top: .15rem;
+    right: 1rem;
+
+    &::before {
+      content: "";
+      background-color: $color-full-white;
+      width: .55rem;
+      height: .25rem;
+      border-top: 2.5px solid $color-full-black;
+      border-bottom: 2.5px solid $color-full-black;
+      display: inline-block;
+      position: absolute;
+      top: .1rem;
+      left: -0.7rem;
+      z-index: 1;
+    }
+  }
+}
+
+.parada-det-icon {
+  position: relative;
+
+  .left,
+  .right {
+    border: 3px solid $color-full-white;
+    box-shadow: 0 0 0 2.5px $color-full-black;
+    height: .3rem;
+  }
+  
+  .left {
+    background-color: $color-full-black;
+    width: .3rem;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .right {
+    width: 2rem;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 1.3rem;
+
+      &::after {
+      content: "";
+      position: absolute;
+      width: .3rem;
+      height: .3rem;
+      background-color: $color-full-black;
+      border-radius: 12px;
+      top: 0;
+      right: .8rem;
+    }
+  }
+}

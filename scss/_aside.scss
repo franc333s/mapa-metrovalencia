@@ -1,0 +1,20 @@
+aside {
+    margin: 3rem 1rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "train caption"
+        "tram caption";
+    column-gap: 2rem;
+    
+    .train {
+        grid-area: train;
+    }
+    .tram {
+        grid-area: tram;
+    }
+    .caption {  
+        grid-area: caption;
+    }
+}

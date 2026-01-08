@@ -1,0 +1,218 @@
+
+@use "variables" as *;
+
+// headers
+h2,
+.h2 {
+    font-weight: $font-light;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+// texts
+.logo {
+    font-family: $font-secondary;
+    font-size: 48px;
+
+    .m {
+        color: $color-full-white;
+        background-color: $color-corporative-red;
+        border-radius: 100px;
+        padding: 8px 1px 4px 24px;    
+    }
+
+    .etro,
+    .valencia {
+        letter-spacing: -0.5px;
+    }
+
+    .valencia {
+        font-weight: $font-light;
+    }
+}
+
+nav {
+
+    .label-tag {
+        color: $color-full-white;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: $font-regular;
+        
+        .linea,
+        .line-1,
+        .line-2,
+        .line-3,
+        .line-4,
+        .line-5,
+        .line-6,
+        .line-7,
+        .line-8,
+        .line-9,
+        .line-10 {
+            padding: 4px 8px;
+        }
+    
+        .linea {
+            background-color: $color-full-black;
+        }
+    
+        .line-1 {
+            background-color: $color-line-1b;
+        }
+        .line-2 {
+            background-color: $color-line-2b;
+        }
+        .line-3 {
+            background-color: $color-line-3b;
+        }
+        .line-4 {
+            background-color: $color-line-4b;
+        }
+        .line-5 {
+            background-color: $color-line-5b;
+        }
+        .line-6 {
+            background-color: $color-line-6b;
+        }
+        .line-7 {
+            background-color: $color-line-7b;
+        }
+        .line-8 {
+            background-color: $color-line-8b;
+        }
+        .line-9 {
+            background-color: $color-line-9b;
+        }
+        .line-10 {
+            background-color: $color-line-10b;
+        }
+    }
+}
+
+
+aside {
+
+    .label-line {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .label-caption {
+        display: grid;
+        grid-template-columns: 80px auto;
+        gap: 8px;
+    }
+}
+
+.title-section {
+    font-family: $font-tertiary;
+
+    .title-section-item {
+        font-weight: 500;
+    }
+}
+
+.label-line {
+    font-family: $font-tertiary;
+    font-weight: $font-light;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: .5rem;
+    
+    &:first-of-type {
+        padding-top: 1rem;
+    }
+     &:last-of-type {
+        padding-bottom: 1.5rem;
+    }
+}
+
+.label-caption {
+    font-family: $font-tertiary;
+    font-weight: $font-light;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 1rem;
+     
+    &:first-of-type {
+        padding-top: 1rem;
+    }
+     &:last-of-type {
+        padding-bottom: 1.5rem;
+    }
+}
+
+.label-icons {
+    margin-top: .5rem;
+}
+
+.line-num {
+    color: $color-full-white;
+    font-weight: $font-bold;
+    font-size: 30px;
+    line-height: 36px;
+    border-radius: 6px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+
+    &.line-1 {
+        background-color: $color-line-1;
+    }
+    &.line-2 {
+        background-color: $color-line-2;
+    }
+    &.line-3 {
+        background-color: $color-line-3;
+    }
+    &.line-4 {
+        background-color: $color-line-4;
+    }
+    &.line-5 {
+        background-color: $color-line-5;
+    }
+    &.line-6 {
+        background-color: $color-line-6;
+    }
+    &.line-7 {
+        background-color: $color-line-7;
+    }
+    &.line-8 {
+        background-color: $color-line-8;
+    }
+    &.line-9 {
+        background-color: $color-line-9;
+    }
+    &.line-10 {
+        background-color: $color-line-10;
+        letter-spacing: -3px;
+        justify-content: flex-start;
+    }
+
+    &.small {
+        font-size: 20px;
+        line-height: 28px;
+        height: 26px;
+        width: 26px;
+    }
+}
+
+
+
+
+// utilities
+.font-medium {
+    font-weight: $font-medium;
+}
+
+.font-bold {
+    font-weight: $font-bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

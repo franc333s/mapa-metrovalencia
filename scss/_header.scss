@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+header {
+    border-bottom: 1px solid $color-gray-200;
+    padding-bottom: 1rem;
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+}
