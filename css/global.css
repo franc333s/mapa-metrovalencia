@@ -130,14 +130,9 @@ nav .label-tag .line-10 {
   background-color: #b7dd79;
 }
 
-aside .label-line {
+aside .feature-line {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-aside .label-caption {
-  display: grid;
-  grid-template-columns: 80px auto;
   gap: 8px;
 }
 
@@ -148,36 +143,18 @@ aside .label-caption {
   font-weight: 500;
 }
 
-.label-line {
+.feature-line {
   font-family: "Sunflower", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   padding-bottom: 0.5rem;
 }
-.label-line:first-of-type {
+.feature-line:first-of-type {
   padding-top: 1rem;
 }
-.label-line:last-of-type {
+.feature-line:last-of-type {
   padding-bottom: 1.5rem;
-}
-
-.label-caption {
-  font-family: "Sunflower", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  padding-bottom: 1rem;
-}
-.label-caption:first-of-type {
-  padding-top: 1rem;
-}
-.label-caption:last-of-type {
-  padding-bottom: 1.5rem;
-}
-
-.label-icons {
-  margin-top: 0.5rem;
 }
 
 .line-num {
@@ -225,9 +202,56 @@ aside .label-caption {
 }
 .line-num.small {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 26px;
   height: 26px;
   width: 26px;
+}
+
+.feature-item {
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.feature-item:first-of-type {
+  padding-top: 1rem;
+}
+.feature-item:last-of-type {
+  padding-bottom: 1.5rem;
+}
+.feature-item .feature-icon {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+.feature-item .feature-station {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.feature-item .feature-station h3 {
+  font-family: "Sunflower", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.feature-item .feature-end-station {
+  display: grid;
+  grid-template-columns: 26px auto;
+  justify-content: end;
+  align-items: center;
+  gap: 0.2rem;
+}
+.feature-item .feature-end-station h3 {
+  font-family: "Sunflower", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.feature-item .feature-content {
+  font-family: "Sunflower", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .font-medium {
@@ -242,7 +266,7 @@ aside .label-caption {
   text-transform: uppercase;
 }
 
-.info-icon-dot {
+.info-icon {
   position: relative;
   background-color: #CE1A42;
   width: 30px;
@@ -251,7 +275,7 @@ aside .label-caption {
   overflow: visible;
   margin-top: 0.25rem;
 }
-.info-icon-dot::before {
+.info-icon::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -262,7 +286,7 @@ aside .label-caption {
   left: 50%;
   transform: translateX(-50%);
 }
-.info-icon-dot::after {
+.info-icon::after {
   content: "";
   position: absolute;
   width: 3px;
@@ -327,39 +351,34 @@ aside .label-caption {
 }
 
 .conexion-ferr-icon {
-  position: relative;
-  width: 0.8rem;
-  height: 0.2rem;
   background-color: #fff;
   border-top: 2.5px solid #000;
   border-bottom: 2.5px solid #000;
+  width: 0.8rem;
+  height: 0.2rem;
   display: inline-block;
+  position: relative;
   top: -0.1rem;
-  left: 1.44rem;
+  right: 1.6rem;
+}
+.conexion-ferr-icon::before, .conexion-ferr-icon::after {
+  content: "";
+  background-color: #fff;
+  border: 2.5px solid #000;
+  border-radius: 12px;
+  width: 1.5rem;
+  height: 0.8rem;
+  position: absolute;
+  top: -0.45rem;
+  z-index: -1;
 }
 .conexion-ferr-icon::before {
   content: "";
-  background-color: #fff;
-  width: 1.5rem;
-  height: 0.8rem;
-  border: 2.5px solid #000;
-  border-radius: 12px;
-  position: absolute;
-  top: -0.45rem;
   left: -1.6rem;
-  z-index: -1;
 }
 .conexion-ferr-icon::after {
   content: "";
-  background-color: #fff;
-  width: 1.5rem;
-  height: 0.8rem;
-  border: 2.5px solid #000;
-  border-radius: 12px;
-  position: absolute;
-  top: -0.45rem;
   right: -1.6rem;
-  z-index: -1;
 }
 
 .conexion-inter-icon {
@@ -367,52 +386,50 @@ aside .label-caption {
 }
 .conexion-inter-icon .left {
   background-color: #fff;
-  width: 2.2rem;
-  height: 1.1rem;
   border: 2.5px solid #000;
   border-radius: 12px;
+  width: 2.2rem;
+  height: 1.1rem;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -0.5rem;
+  right: 1.5rem;
+}
+.conexion-inter-icon .left::before, .conexion-inter-icon .left::after {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  border-radius: 12px;
+  top: 0.15rem;
 }
 .conexion-inter-icon .left::before {
   content: "";
-  position: absolute;
-  width: 0.8rem;
-  height: 0.8rem;
   background-color: #D33A83;
-  border-radius: 12px;
-  top: 0.15rem;
   left: 0.2rem;
 }
 .conexion-inter-icon .left::after {
   content: "";
-  position: absolute;
-  width: 0.8rem;
-  height: 0.8rem;
   background-color: #e4be36;
-  border-radius: 12px;
-  top: 0.15rem;
   right: 0.2rem;
 }
 .conexion-inter-icon .right {
   background-color: #0F4584;
-  width: 0.8rem;
-  height: 0.8rem;
   border: 2.5px solid #fff;
   box-shadow: 0 0 0 2.5px #000;
   border-radius: 12px;
+  width: 0.8rem;
+  height: 0.8rem;
   position: absolute;
-  top: 0.15rem;
-  right: 1rem;
+  top: -0.35rem;
+  right: 0;
 }
 .conexion-inter-icon .right::before {
   content: "";
   background-color: #fff;
-  width: 0.55rem;
-  height: 0.25rem;
   border-top: 2.5px solid #000;
   border-bottom: 2.5px solid #000;
+  width: 0.55rem;
+  height: 0.25rem;
   display: inline-block;
   position: absolute;
   top: 0.1rem;
@@ -422,27 +439,25 @@ aside .label-caption {
 
 .parada-det-icon {
   position: relative;
+  width: 100px;
 }
 .parada-det-icon .left,
 .parada-det-icon .right {
   border: 3px solid #fff;
   box-shadow: 0 0 0 2.5px #000;
+  border-radius: 12px;
   height: 0.3rem;
+  position: absolute;
+  top: -0.3rem;
 }
 .parada-det-icon .left {
   background-color: #000;
   width: 0.3rem;
-  border-radius: 12px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  right: 3rem;
 }
 .parada-det-icon .right {
   width: 2rem;
-  border-radius: 12px;
-  position: absolute;
-  top: 0;
-  left: 1.3rem;
+  right: 0;
 }
 .parada-det-icon .right::after {
   content: "";
