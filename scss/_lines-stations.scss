@@ -1,0 +1,927 @@
+@use "variables" as *;
+
+// línea 1
+.map {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    border: 1px solid blue;
+    height: 100vh;
+}
+.route {
+    // background-color: rgba(250, 235, 215, 0.426);
+    height: auto;
+
+    &.one {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        border: 1px solid red;
+
+        .part-1 {
+            position: absolute;
+            background-color: $color-line-1;
+            height: 200px;
+            width: 8px;
+            top: 2.2rem;
+            left: 1px;
+        }
+    }
+
+    &.two {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        border: 1px dotted red;
+
+        .part-1 {
+            position: absolute;
+            background-color: $color-line-2;
+            height: 400px;
+            width: 8px;
+            top: 2.2rem;
+            right: 1px;
+        }
+    }
+
+    &.four {
+    
+        &.block-1 {
+            position: absolute;
+            top: 15rem;
+            left: 17.5rem;
+            display: flex;
+            flex-direction: column-reverse;
+
+            border: 1px solid red;
+
+            .part-1 {
+                position: absolute;
+                border-left: 3px solid $color-line-4;
+                border-right: 3px solid $color-line-4;
+                background-color: $color-full-white;
+                height: 50px;
+                width: 4px;
+                bottom: 3.3rem;
+                left: 0;
+
+                &::before,
+                &::after {
+                    background-color: $color-full-white;
+                    display: block;
+                    border: 3px solid $color-line-4;
+                    clip-path: polygon(50% 50%, 0 50%, 0 0, 50% 0);
+                    position: absolute;
+                    border-radius: 100px;
+                }
+
+                &::before {
+                    content: "";
+                    width: 32px;
+                    height: 32px;
+                    bottom: 31px;
+                    left: -3px;
+                }
+
+                &::after {
+                    content: "";
+                    width: 21px;
+                    height: 21px;
+                    bottom: 35px;
+                    left: 4px;
+                }
+            }
+
+            .part-2 {
+                position: absolute;
+                border-top: 3px solid $color-line-4;
+                border-bottom: 3px solid $color-line-4;
+                background-color: $color-full-white;
+                width: 90px;
+                height: 4px;
+                bottom: 112px;
+                left: 19px;
+
+                &::before,
+                &::after {
+                    background-color: $color-full-white;
+                    display: block;
+                    border: 3px solid $color-line-4;
+                    clip-path: polygon(50% 50%, 100% 50%, 100% 0, 50% 0);
+                    position: absolute;
+                    border-radius: 100px;
+                    z-index: 1;
+                }
+
+                &::before {
+                    content: "";
+                    width: 30px;
+                    height: 30px;
+                    top: -3px;
+                    left: 69px;
+                }
+
+                &::after {
+                    content: "";
+                    width: 18px;
+                    height: 18px;
+                    top: 4px;
+                    left: 75px;
+                }
+            }
+        }
+        &.block-2 {
+            position: absolute;
+            top: 6rem;
+            left: 18rem;
+            display: flex;
+
+            border: 1px solid green;
+
+            .feature-line {
+                align-self: flex-end;
+                position: absolute;
+                bottom: -16px;
+                left: 12px;
+            }
+
+            .part-1 {
+                position: absolute;
+                border-top: 8px solid $color-line-4;
+                border-right: 8px solid $color-line-4;
+                border-top-right-radius: 20px;
+                height: 20px;
+                width: 60px;
+                top: .5rem;
+                left: 35.5px;
+            }
+        }
+        &.block-3 {
+            border: 1px solid orange;
+            position: absolute;
+            top: 0;
+            left: 31.85rem;
+
+            .part-1 {
+                position: absolute;
+                border-right: 8px solid $color-line-4;
+                border-bottom: 8px solid $color-line-4;
+                border-bottom-right-radius: 20px;
+                height: 114px;
+                width: 3rem;
+                top: 2.2rem;
+                left: -2.9rem;
+            }
+            .part-2 {
+                position: absolute;
+                border-top: 8px solid $color-line-4;
+                border-left: 8px solid $color-line-4;
+                border-top-left-radius: 20px;
+                height: 10px;
+                width: 60px;
+                top: 9.3rem;
+                right: 11.7rem;
+            }
+
+            .part-3 {
+                position: absolute;
+                border-top: 8px solid $color-line-4;
+                border-left: 8px solid $color-line-4;
+                border-top-left-radius: 20px;
+                height: 60px;
+                width: 60px;
+                top: 9.3rem;
+                right: 11.7rem;
+            }
+        }
+
+        &.block-4 {
+            position: absolute;
+            top: 10.1rem;
+            left: 24.78rem;
+
+            .part-1 {
+                position: absolute;
+                background-color: $color-line-4;
+                height: 200px;
+                width: 8px;
+                top: 0;
+                left: 0.0;
+            }
+        }
+
+    }
+}
+
+.station {
+    font-family: $font-tertiary;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+
+    // linea 1
+    &.betera {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-black;
+            box-shadow: 0 0 0 5px $color-line-1;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 12px;
+            position: relative;
+            margin-right: .5rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: 1px;
+                left: .6rem;
+                z-index: -1;
+            }
+        }
+    }
+    &.horta-vella {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    &.masies {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    &.seminari-ceu {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+
+        .small {
+            font-size: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    &.moncada-alfara {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    &.massarrojos {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    &.rocafort {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    &.godella {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    &.burjassot-godella {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    &.burjassot {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+
+    // linea 2
+    &.lliria {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-black;
+            box-shadow: 0 0 0 5px $color-line-2;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 12px;
+            position: relative;
+            margin-left: .5rem;
+
+            &::before {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: 1px;
+                right: .6rem;
+                z-index: -1;
+            }
+        }
+    }
+    &.benaguasil,
+    &.fondo-benaguasil,
+    &.leliana,
+    &.lacanyada,
+    &.campament,
+    &.carolines-fira,
+    &.benimamet, 
+    &.cantereria {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            right: 2px;
+            margin-left: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                right: 2px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &.poblavallbona,
+    &.galipont-torre,
+    &.montesol,
+    &.elclot,
+    &.entrepins,
+    &.lavallesa,
+    &.fuentejarro,
+    &.santarita {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            right: 2px;
+            margin-left: .7rem;
+
+            &::before {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                right: 2px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &.paterna {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            right: 2px;
+            margin-left: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                right: 2px;
+                z-index: -1;
+            }
+        }
+
+        .small {
+            font-size: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    // línia 4
+    &.fira-vlc {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        
+        p {
+            width: 40px;
+        }
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-black;
+            box-shadow: 0 0 0 5px $color-line-4;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 12px;
+            position: relative;
+            margin-right: .5rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: 1px;
+                left: .6rem;
+                z-index: -1;
+            }
+        }
+    }
+    &.llomallarga-terramelar {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        flex-direction: column-reverse;
+        gap: 14px;
+
+        p {
+            width: 120px;
+            text-align: center;
+        }
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-black;
+            box-shadow: 0 0 0 5px $color-line-4;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 12px;
+            position: relative;
+            margin-right: .5rem;
+            transform: rotate(-90deg);
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: 1px;
+                left: .6rem;
+                z-index: -1;
+            }
+        }
+    }
+    &.mas-rosari {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+
+        .dot {
+            background-color: $color-full-white;
+            border: 1.5px solid $color-full-black;
+            box-shadow: 0 0 0 5px $color-line-4;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 12px;
+            position: relative;
+            margin-right: .5rem;
+            left: 3.0;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: 1px;
+                left: .6rem;
+                z-index: -1;
+            }
+        }
+    }
+
+    &.lacoma,
+    &.tomas-valiente {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &.parc-cientific {
+        font-weight: $font-light;
+        flex-direction: column-reverse;
+        position: absolute;
+        right: 9rem;
+        top: 7.8rem;
+        width: 100px;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            margin-right: .7rem;
+            
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                height: 7px;
+                width: 4px;
+                position: absolute;
+                bottom: 2px;
+                right: -1px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &.apunt,
+    &.campus,
+    &.santjoan,
+    &.lagranja,
+    &.palau-congresos {
+        font-weight: $font-light;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+    
+    &.vaestelles  {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+            
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+
+     &.empalme  {
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+
+        .dot {
+            background-color: $color-full-black;
+            border: 1.5px solid $color-full-white;
+            box-shadow: 0 0 0 1.5px $color-full-black;
+            width: .15rem;
+            height: .15rem;
+            border-radius: 12px;
+            position: relative;
+            top: 0;
+            left: 2px;
+            margin-right: .7rem;
+            
+
+            &::after {
+                content: "";
+                background-color: $color-full-black;
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
+                z-index: -1;
+            }
+        }
+    }
+
+
+
+
+
+
+    .m-icon {
+        padding-left: 6px;    
+        font-size: .5rem;
+        text-transform: lowercase;
+    }
+    .p-icon {
+        font-size: .7rem;
+        border-radius: 2px;
+        padding: 1px 3px;    
+    }
+}

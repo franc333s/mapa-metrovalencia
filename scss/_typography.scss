@@ -116,13 +116,6 @@ aside {
     font-size: 14px;
     line-height: 16px;
     padding-bottom: .5rem;
-    
-    &:first-of-type {
-        padding-top: 1rem;
-    }
-     &:last-of-type {
-        padding-bottom: 1.5rem;
-    }
 }
 
 
@@ -210,7 +203,7 @@ aside {
       line-height: 1.2rem;
     }
   }
-  
+
   .feature-end-station {
     display: grid;
     grid-template-columns: 26px auto;
@@ -231,10 +224,7 @@ aside {
     font-size: 14px;
     line-height: 16px;
   }
-
 }
-
-
 
 
 

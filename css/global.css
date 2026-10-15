@@ -150,12 +150,6 @@ aside .feature-line {
   line-height: 16px;
   padding-bottom: 0.5rem;
 }
-.feature-line:first-of-type {
-  padding-top: 1rem;
-}
-.feature-line:last-of-type {
-  padding-bottom: 1.5rem;
-}
 
 .line-num {
   color: #fff;
@@ -489,6 +483,811 @@ nav .label-container {
   display: flex;
   gap: 3rem;
   margin-top: 3rem;
+}
+
+.map {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid blue;
+  height: 100vh;
+}
+
+.route {
+  height: auto;
+}
+.route.one {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid red;
+}
+.route.one .part-1 {
+  position: absolute;
+  background-color: #E7B035;
+  height: 200px;
+  width: 8px;
+  top: 2.2rem;
+  left: 1px;
+}
+.route.two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border: 1px dotted red;
+}
+.route.two .part-1 {
+  position: absolute;
+  background-color: #D33A83;
+  height: 400px;
+  width: 8px;
+  top: 2.2rem;
+  right: 1px;
+}
+.route.four.block-1 {
+  position: absolute;
+  top: 15rem;
+  left: 17.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid red;
+}
+.route.four.block-1 .part-1 {
+  position: absolute;
+  border-left: 3px solid #0F4584;
+  border-right: 3px solid #0F4584;
+  background-color: #fff;
+  height: 50px;
+  width: 4px;
+  bottom: 3.3rem;
+  left: 0;
+}
+.route.four.block-1 .part-1::before, .route.four.block-1 .part-1::after {
+  background-color: #fff;
+  display: block;
+  border: 3px solid #0F4584;
+  clip-path: polygon(50% 50%, 0 50%, 0 0, 50% 0);
+  position: absolute;
+  border-radius: 100px;
+}
+.route.four.block-1 .part-1::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  bottom: 31px;
+  left: -3px;
+}
+.route.four.block-1 .part-1::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  bottom: 35px;
+  left: 4px;
+}
+.route.four.block-1 .part-2 {
+  position: absolute;
+  border-top: 3px solid #0F4584;
+  border-bottom: 3px solid #0F4584;
+  background-color: #fff;
+  width: 90px;
+  height: 4px;
+  bottom: 112px;
+  left: 19px;
+}
+.route.four.block-1 .part-2::before, .route.four.block-1 .part-2::after {
+  background-color: #fff;
+  display: block;
+  border: 3px solid #0F4584;
+  clip-path: polygon(50% 50%, 100% 50%, 100% 0, 50% 0);
+  position: absolute;
+  border-radius: 100px;
+  z-index: 1;
+}
+.route.four.block-1 .part-2::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: 69px;
+}
+.route.four.block-1 .part-2::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 4px;
+  left: 75px;
+}
+.route.four.block-2 {
+  position: absolute;
+  top: 6rem;
+  left: 18rem;
+  display: flex;
+  border: 1px solid green;
+}
+.route.four.block-2 .feature-line {
+  align-self: flex-end;
+  position: absolute;
+  bottom: -16px;
+  left: 12px;
+}
+.route.four.block-2 .part-1 {
+  position: absolute;
+  border-top: 8px solid #0F4584;
+  border-right: 8px solid #0F4584;
+  border-top-right-radius: 20px;
+  height: 20px;
+  width: 60px;
+  top: 0.5rem;
+  left: 35.5px;
+}
+.route.four.block-3 {
+  border: 1px solid orange;
+  position: absolute;
+  top: 0;
+  left: 31.85rem;
+}
+.route.four.block-3 .part-1 {
+  position: absolute;
+  border-right: 8px solid #0F4584;
+  border-bottom: 8px solid #0F4584;
+  border-bottom-right-radius: 20px;
+  height: 114px;
+  width: 3rem;
+  top: 2.2rem;
+  left: -2.9rem;
+}
+.route.four.block-3 .part-2 {
+  position: absolute;
+  border-top: 8px solid #0F4584;
+  border-left: 8px solid #0F4584;
+  border-top-left-radius: 20px;
+  height: 10px;
+  width: 60px;
+  top: 9.3rem;
+  right: 11.7rem;
+}
+.route.four.block-3 .part-3 {
+  position: absolute;
+  border-top: 8px solid #0F4584;
+  border-left: 8px solid #0F4584;
+  border-top-left-radius: 20px;
+  height: 60px;
+  width: 60px;
+  top: 9.3rem;
+  right: 11.7rem;
+}
+.route.four.block-4 {
+  position: absolute;
+  top: 10.1rem;
+  left: 24.78rem;
+}
+.route.four.block-4 .part-1 {
+  position: absolute;
+  background-color: #0F4584;
+  height: 200px;
+  width: 8px;
+  top: 0;
+  left: 0;
+}
+
+.station {
+  font-family: "Sunflower", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.station.betera {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.station.betera .dot {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  box-shadow: 0 0 0 5px #E7B035;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 0.5rem;
+}
+.station.betera .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 1px;
+  left: 0.6rem;
+  z-index: -1;
+}
+.station.horta-vella {
+  font-weight: 300;
+}
+.station.horta-vella .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.horta-vella .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.masies {
+  font-weight: 300;
+}
+.station.masies .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.masies .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.seminari-ceu {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.station.seminari-ceu .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.seminari-ceu .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.seminari-ceu .small {
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.station.moncada-alfara {
+  font-weight: 300;
+}
+.station.moncada-alfara .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.moncada-alfara .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.massarrojos {
+  font-weight: 300;
+}
+.station.massarrojos .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.massarrojos .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.rocafort {
+  font-weight: 300;
+}
+.station.rocafort .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.rocafort .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.godella {
+  font-weight: 300;
+}
+.station.godella .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.godella .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.burjassot-godella {
+  font-weight: 300;
+}
+.station.burjassot-godella .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.burjassot-godella .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.burjassot {
+  font-weight: 300;
+}
+.station.burjassot .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.burjassot .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.lliria {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.station.lliria .dot {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  box-shadow: 0 0 0 5px #D33A83;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 12px;
+  position: relative;
+  margin-left: 0.5rem;
+}
+.station.lliria .dot::before {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 1px;
+  right: 0.6rem;
+  z-index: -1;
+}
+.station.benaguasil, .station.fondo-benaguasil, .station.leliana, .station.lacanyada, .station.campament, .station.carolines-fira, .station.benimamet, .station.cantereria {
+  font-weight: 300;
+}
+.station.benaguasil .dot, .station.fondo-benaguasil .dot, .station.leliana .dot, .station.lacanyada .dot, .station.campament .dot, .station.carolines-fira .dot, .station.benimamet .dot, .station.cantereria .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  right: 2px;
+  margin-left: 0.7rem;
+}
+.station.benaguasil .dot::after, .station.fondo-benaguasil .dot::after, .station.leliana .dot::after, .station.lacanyada .dot::after, .station.campament .dot::after, .station.carolines-fira .dot::after, .station.benimamet .dot::after, .station.cantereria .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  right: 2px;
+  z-index: -1;
+}
+.station.poblavallbona, .station.galipont-torre, .station.montesol, .station.elclot, .station.entrepins, .station.lavallesa, .station.fuentejarro, .station.santarita {
+  font-weight: 300;
+}
+.station.poblavallbona .dot, .station.galipont-torre .dot, .station.montesol .dot, .station.elclot .dot, .station.entrepins .dot, .station.lavallesa .dot, .station.fuentejarro .dot, .station.santarita .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  right: 2px;
+  margin-left: 0.7rem;
+}
+.station.poblavallbona .dot::before, .station.galipont-torre .dot::before, .station.montesol .dot::before, .station.elclot .dot::before, .station.entrepins .dot::before, .station.lavallesa .dot::before, .station.fuentejarro .dot::before, .station.santarita .dot::before {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  right: 2px;
+  z-index: -1;
+}
+.station.paterna {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.station.paterna .dot {
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  right: 2px;
+  margin-left: 0.7rem;
+}
+.station.paterna .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  right: 2px;
+  z-index: -1;
+}
+.station.paterna .small {
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.station.fira-vlc {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.station.fira-vlc p {
+  width: 40px;
+}
+.station.fira-vlc .dot {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  box-shadow: 0 0 0 5px #0F4584;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 0.5rem;
+}
+.station.fira-vlc .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 1px;
+  left: 0.6rem;
+  z-index: -1;
+}
+.station.llomallarga-terramelar {
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-direction: column-reverse;
+  gap: 14px;
+}
+.station.llomallarga-terramelar p {
+  width: 120px;
+  text-align: center;
+}
+.station.llomallarga-terramelar .dot {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  box-shadow: 0 0 0 5px #0F4584;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 0.5rem;
+  transform: rotate(-90deg);
+}
+.station.llomallarga-terramelar .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 1px;
+  left: 0.6rem;
+  z-index: -1;
+}
+.station.mas-rosari {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.station.mas-rosari .dot {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  box-shadow: 0 0 0 5px #0F4584;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 0.5rem;
+  left: 3;
+}
+.station.mas-rosari .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 1px;
+  left: 0.6rem;
+  z-index: -1;
+}
+.station.lacoma, .station.tomas-valiente {
+  font-weight: 300;
+}
+.station.lacoma .dot, .station.tomas-valiente .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.lacoma .dot::after, .station.tomas-valiente .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.parc-cientific {
+  font-weight: 300;
+  flex-direction: column-reverse;
+  position: absolute;
+  right: 9rem;
+  top: 7.8rem;
+  width: 100px;
+}
+.station.parc-cientific .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 0.7rem;
+}
+.station.parc-cientific .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  height: 7px;
+  width: 4px;
+  position: absolute;
+  bottom: 2px;
+  right: -1px;
+  z-index: -1;
+}
+.station.apunt, .station.campus, .station.santjoan, .station.lagranja, .station.palau-congresos {
+  font-weight: 300;
+}
+.station.apunt .dot, .station.campus .dot, .station.santjoan .dot, .station.lagranja .dot, .station.palau-congresos .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.apunt .dot::after, .station.campus .dot::after, .station.santjoan .dot::after, .station.lagranja .dot::after, .station.palau-congresos .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.vaestelles {
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.station.vaestelles .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.vaestelles .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station.empalme {
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.station.empalme .dot {
+  background-color: #000;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 1.5px #000;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 12px;
+  position: relative;
+  top: 0;
+  left: 2px;
+  margin-right: 0.7rem;
+}
+.station.empalme .dot::after {
+  content: "";
+  background-color: #000;
+  border-radius: 4px;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: -0.75px;
+  left: 2px;
+  z-index: -1;
+}
+.station .m-icon {
+  padding-left: 6px;
+  font-size: 0.5rem;
+  text-transform: lowercase;
+}
+.station .p-icon {
+  font-size: 0.7rem;
+  border-radius: 2px;
+  padding: 1px 3px;
 }
 
 aside {
