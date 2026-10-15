@@ -1,0 +1,55 @@
+:root {
+    /* Colors base */
+   --color-full-white: #fff;
+   --color-gray-200: #a6a6a6;
+   --color-gray-400: #5f5d5d;
+   --color-gray-900: #222;
+   --color-full-black: #000;
+   --color-corporative-red: #CE1A42;
+   
+   /* Colors lines Metrovalencia */
+   --color-line-1: #E7B035; 
+   --color-line-1b: #e4be36; 
+   --color-line-2: #D33A83;
+   --color-line-2b: #b4397f;
+   --color-line-3: #C2202D; 
+   --color-line-3b: #b11c2f;
+   --color-line-4: #0F4584;
+   --color-line-4b: #2b498b;
+   --color-line-4c: #0F4584;
+   --color-line-5: #008458; 
+   --color-line-5b: #4e886d;
+   --color-line-6: #8162A0; 
+   --color-line-6b: #817fb3;
+   --color-line-7: #DB841A; 
+   --color-line-7b: #ce7d28;
+   --color-line-8: #40B2CB; 
+   --color-line-8b: #97c4da;
+   --color-line-9: #AD7D4F; 
+   --color-line-9b: #a47e52;
+   --color-line-10: #B3CB6D;
+   --color-line-10b: #b7dd79;
+   
+   /* Colors zones Metrovalencia */
+   --color-zone-a: #B08118;
+   --color-zone-a-light: #FDFCF0;
+   --color-zone-b:#0069B2;
+   --color-zone-b-light: #EDF5FC;
+   --color-zone-plus:#AC4D91;
+   --color-zone-plus-light: #F8EDF4;
+   
+   
+   /* Fonts */
+   --font-primary: 'Montserrat', sans-serif;
+   --font-secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   --font-tertiary: 'Sunflower', sans-serif;
+   
+   
+   /* Font weights */
+   --font-bold: 700;
+   --font-semi-bold: 600;
+   --font-medium: 500;
+   --font-regular: 400;
+   --font-light: 300;
+   --font-thin: 100;
+}

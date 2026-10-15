@@ -1,10 +1,6 @@
-@use "variables" as *;
-
-
-
 .info-icon {
   position: relative;
-  background-color: $color-corporative-red;
+  background-color: var(--color-corporative-red);
   width: 30px;
   height: 30px;
   border-radius: 50rem;
@@ -16,7 +12,7 @@
     position: absolute;
     width: 4px;
     height: 4px;
-    background-color: $color-full-white;
+    background-color: var(--color-full-white);
     border-radius: 50%;
     top: 7px;
     left: 50%;
@@ -27,7 +23,7 @@
     position: absolute;
     width: 3px;
     height: 8px;
-    background-color: $color-full-white;
+    background-color: var(--color-full-white);
     border-radius: 1px;
     top: 14px;
     left: 50%;
@@ -36,19 +32,19 @@
 }
 
 .m-icon {
-    color: $color-full-white;
-    background-color: $color-corporative-red;
-    font-family: $font-primary;
-    font-weight: $font-bold;
+    color: var(--color-full-white);
+    background-color: var(--color-corporative-red);
+    font-family: var(--font-primary);
+    font-weight: var(--font-bold);
     border-radius: 100px;
     padding: 4px 1px 2px 8px;    
 }
 
 .p-icon {
-    color: $color-full-white;
+    color: var(--color-full-white);
     background-color: #0173A7;
-    font-family: $font-primary;
-    font-weight: $font-bold;
+    font-family: var(--font-primary);
+    font-weight: var(--font-bold);
     font-size: 20px;
     text-transform: uppercase;
     border-radius: 2px;
@@ -56,41 +52,41 @@
 }
 
 .pasarela-icon {
-  background-color: $color-full-white;
+  background-color: var(--color-full-white);
   width: 4rem;
   height: .5rem;
-  border-top: 3px solid $color-full-black;
-  border-bottom: 3px solid $color-full-black;
+  border-top: 3px solid var(--color-full-black);
+  border-bottom: 3px solid var(--color-full-black);
 }
 
 .pasarela-wip-icon {
-  background-color: $color-full-white;
+  background-color: var(--color-full-white);
   width: 4rem;
   height: .5rem;
-  border-top: 3px dashed $color-full-black;
-  border-bottom: 3px dashed $color-full-black;
+  border-top: 3px dashed var(--color-full-black);
+  border-bottom: 3px dashed var(--color-full-black);
 }
 
 .pasarela-tram-icon {
-  background-color: $color-full-white;
+  background-color: var(--color-full-white);
   width: 4rem;
   height: .5rem;
-  border-top: 3px solid $color-line-4b;
-  border-bottom: 3px solid $color-line-4b;
+  border-top: 3px solid var(--color-line-4b);
+  border-bottom: 3px solid var(--color-line-4b);
 }
 
 .parada-comp-icon {
-  background-color: $color-full-white;
+  background-color: var(--color-full-white);
   width: 3.5rem;
   height: .6rem;
-  border: 2.5px solid $color-full-black;
+  border: 2.5px solid var(--color-full-black);
   border-radius: 12px;
 }
 
 .conexion-ferr-icon {
-  background-color: $color-full-white;
-  border-top: 2.5px solid $color-full-black;
-  border-bottom: 2.5px solid $color-full-black;
+  background-color: var(--color-full-white);
+  border-top: 2.5px solid var(--color-full-black);
+  border-bottom: 2.5px solid var(--color-full-black);
   width: .8rem;
   height: .2rem;
   display: inline-block;
@@ -101,8 +97,8 @@
   &::before,
   &::after {
     content: "";
-    background-color: $color-full-white;
-    border: 2.5px solid $color-full-black;
+    background-color: var(--color-full-white);
+    border: 2.5px solid var(--color-full-black);
     border-radius: 12px;
     width: 1.5rem;
     height: .8rem;
@@ -125,8 +121,8 @@
   position: relative;
 
   .left {
-    background-color: $color-full-white;
-    border: 2.5px solid $color-full-black;
+    background-color: var(--color-full-white);
+    border: 2.5px solid var(--color-full-black);
     border-radius: 12px;
     width: 2.2rem;
     height: 1.1rem;
@@ -146,21 +142,21 @@
 
     &::before {
       content: "";
-      background-color: $color-line-2;
+      background-color: var(--color-line-2);
       left: .2rem;
     }
 
     &::after {
       content: "";
-      background-color: $color-line-1b;
+      background-color: var(--color-line-1b);
       right: .2rem;
     }
   }
 
   .right {
-    background-color: $color-line-4c;
-    border: 2.5px solid $color-full-white;
-    box-shadow: 0 0 0 2.5px $color-full-black;
+    background-color: var(--color-line-4c);
+    border: 2.5px solid var(--color-full-white);
+    box-shadow: 0 0 0 2.5px var(--color-full-black);
     border-radius: 12px;
     width: .8rem;
     height: .8rem;
@@ -170,9 +166,9 @@
 
     &::before {
       content: "";
-      background-color: $color-full-white;
-      border-top: 2.5px solid $color-full-black;
-      border-bottom: 2.5px solid $color-full-black;
+      background-color: var(--color-full-white);
+      border-top: 2.5px solid var(--color-full-black);
+      border-bottom: 2.5px solid var(--color-full-black);
       width: .55rem;
       height: .25rem;
       display: inline-block;
@@ -190,8 +186,8 @@
 
   .left,
   .right {
-    border: 3px solid $color-full-white;
-    box-shadow: 0 0 0 2.5px $color-full-black;
+    border: 3px solid var(--color-full-white);
+    box-shadow: 0 0 0 2.5px var(--color-full-black);
     border-radius: 12px;
     height: .3rem;
     position: absolute;
@@ -199,7 +195,7 @@
   }
   
   .left {
-    background-color: $color-full-black;
+    background-color: var(--color-full-black);
     width: .3rem;
     right: 3rem;
   }
@@ -213,7 +209,7 @@
       position: absolute;
       width: .3rem;
       height: .3rem;
-      background-color: $color-full-black;
+      background-color: var(--color-full-black);
       border-radius: 12px;
       top: 0;
       right: .8rem;

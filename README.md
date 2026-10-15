@@ -1,2 +1,2 @@
 # mapa-metrovalencia
-MetroValència map developed in html and scss.
+MetroValència map developed in html and css.

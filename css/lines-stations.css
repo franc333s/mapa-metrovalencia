@@ -1,6 +1,4 @@
-@use "variables" as *;
-
-// línea 1
+/* línea 1 */
 .map {
     position: relative;
     top: 0;
@@ -11,7 +9,7 @@
     height: 100vh;
 }
 .route {
-    // background-color: rgba(250, 235, 215, 0.426);
+    /* background-color: rgba(250, 235, 215, 0.426); */
     height: auto;
 
     &.one {
@@ -23,7 +21,7 @@
 
         .part-1 {
             position: absolute;
-            background-color: $color-line-1;
+            background-color: var(--color-line-1);
             height: 200px;
             width: 8px;
             top: 2.2rem;
@@ -44,7 +42,7 @@
 
         .part-1 {
             position: absolute;
-            background-color: $color-line-2;
+            background-color: var(--color-line-2);
             height: 400px;
             width: 8px;
             top: 2.2rem;
@@ -65,9 +63,9 @@
 
             .part-1 {
                 position: absolute;
-                border-left: 3px solid $color-line-4;
-                border-right: 3px solid $color-line-4;
-                background-color: $color-full-white;
+                border-left: 3px solid var(--color-line-4);
+                border-right: 3px solid var(--color-line-4);
+                background-color: var(--color-full-white);
                 height: 50px;
                 width: 4px;
                 bottom: 3.3rem;
@@ -75,9 +73,9 @@
 
                 &::before,
                 &::after {
-                    background-color: $color-full-white;
+                    background-color: var(--color-full-white);
                     display: block;
-                    border: 3px solid $color-line-4;
+                    border: 3px solid var(--color-line-4);
                     clip-path: polygon(50% 50%, 0 50%, 0 0, 50% 0);
                     position: absolute;
                     border-radius: 100px;
@@ -102,9 +100,9 @@
 
             .part-2 {
                 position: absolute;
-                border-top: 3px solid $color-line-4;
-                border-bottom: 3px solid $color-line-4;
-                background-color: $color-full-white;
+                border-top: 3px solid var(--color-line-4);
+                border-bottom: 3px solid var(--color-line-4);
+                background-color: var(--color-full-white);
                 width: 90px;
                 height: 4px;
                 bottom: 112px;
@@ -112,9 +110,9 @@
 
                 &::before,
                 &::after {
-                    background-color: $color-full-white;
+                    background-color: var(--color-full-white);
                     display: block;
-                    border: 3px solid $color-line-4;
+                    border: 3px solid var(--color-line-4);
                     clip-path: polygon(50% 50%, 100% 50%, 100% 0, 50% 0);
                     position: absolute;
                     border-radius: 100px;
@@ -155,8 +153,8 @@
 
             .part-1 {
                 position: absolute;
-                border-top: 8px solid $color-line-4;
-                border-right: 8px solid $color-line-4;
+                border-top: 8px solid var(--color-line-4);
+                border-right: 8px solid var(--color-line-4);
                 border-top-right-radius: 20px;
                 height: 20px;
                 width: 60px;
@@ -172,8 +170,8 @@
 
             .part-1 {
                 position: absolute;
-                border-right: 8px solid $color-line-4;
-                border-bottom: 8px solid $color-line-4;
+                border-right: 8px solid var(--color-line-4);
+                border-bottom: 8px solid var(--color-line-4);
                 border-bottom-right-radius: 20px;
                 height: 114px;
                 width: 3rem;
@@ -182,8 +180,8 @@
             }
             .part-2 {
                 position: absolute;
-                border-top: 8px solid $color-line-4;
-                border-left: 8px solid $color-line-4;
+                border-top: 8px solid var(--color-line-4);
+                border-left: 8px solid var(--color-line-4);
                 border-top-left-radius: 20px;
                 height: 10px;
                 width: 60px;
@@ -193,8 +191,8 @@
 
             .part-3 {
                 position: absolute;
-                border-top: 8px solid $color-line-4;
-                border-left: 8px solid $color-line-4;
+                border-top: 8px solid var(--color-line-4);
+                border-left: 8px solid var(--color-line-4);
                 border-top-left-radius: 20px;
                 height: 60px;
                 width: 60px;
@@ -210,7 +208,7 @@
 
             .part-1 {
                 position: absolute;
-                background-color: $color-line-4;
+                background-color: var(--color-line-4);
                 height: 200px;
                 width: 8px;
                 top: 0;
@@ -222,20 +220,20 @@
 }
 
 .station {
-    font-family: $font-tertiary;
+    font-family: var(--font-tertiary);
     display: flex;
     align-items: center;
     gap: .3rem;
 
-    // linea 1
+    /* linea 1 */
     &.betera {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-black;
-            box-shadow: 0 0 0 5px $color-line-1;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-black);
+            box-shadow: 0 0 0 5px var(--color-line-1);
             width: .4rem;
             height: .4rem;
             border-radius: 12px;
@@ -244,7 +242,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -256,12 +254,12 @@
         }
     }
     &.horta-vella {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -272,7 +270,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -284,12 +282,12 @@
         }
     }
     &.masies {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -300,7 +298,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -312,13 +310,13 @@
         }
     }
     &.seminari-ceu {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -329,7 +327,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -347,12 +345,12 @@
         }
     }
     &.moncada-alfara {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -363,7 +361,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -375,12 +373,12 @@
         }
     }
     &.massarrojos {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -391,7 +389,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -403,12 +401,12 @@
         }
     }
     &.rocafort {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -419,7 +417,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -431,12 +429,12 @@
         }
     }
     &.godella {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -447,7 +445,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -459,12 +457,12 @@
         }
     }
     &.burjassot-godella {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -475,7 +473,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -487,12 +485,12 @@
         }
     }
     &.burjassot {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -503,7 +501,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -515,15 +513,15 @@
         }
     }
 
-    // linea 2
+    /* linea 2 */
     &.lliria {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-black;
-            box-shadow: 0 0 0 5px $color-line-2;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-black);
+            box-shadow: 0 0 0 5px var(--color-line-2);
             width: .4rem;
             height: .4rem;
             border-radius: 12px;
@@ -532,7 +530,7 @@
 
             &::before {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -551,12 +549,12 @@
     &.carolines-fira,
     &.benimamet, 
     &.cantereria {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -567,7 +565,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -587,12 +585,12 @@
     &.lavallesa,
     &.fuentejarro,
     &.santarita {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -603,7 +601,7 @@
 
             &::before {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -616,13 +614,13 @@
     }
 
     &.paterna {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -633,7 +631,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -651,9 +649,9 @@
         }
     }
 
-    // línia 4
+    /* línia 4 */
     &.fira-vlc {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
         
         p {
@@ -661,9 +659,9 @@
         }
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-black;
-            box-shadow: 0 0 0 5px $color-line-4;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-black);
+            box-shadow: 0 0 0 5px var(--color-line-4);
             width: .4rem;
             height: .4rem;
             border-radius: 12px;
@@ -672,7 +670,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -684,7 +682,7 @@
         }
     }
     &.llomallarga-terramelar {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
         flex-direction: column-reverse;
         gap: 14px;
@@ -695,9 +693,9 @@
         }
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-black;
-            box-shadow: 0 0 0 5px $color-line-4;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-black);
+            box-shadow: 0 0 0 5px var(--color-line-4);
             width: .4rem;
             height: .4rem;
             border-radius: 12px;
@@ -707,7 +705,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -719,13 +717,13 @@
         }
     }
     &.mas-rosari {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
 
         .dot {
-            background-color: $color-full-white;
-            border: 1.5px solid $color-full-black;
-            box-shadow: 0 0 0 5px $color-line-4;
+            background-color: var(--color-full-white);
+            border: 1.5px solid var(--color-full-black);
+            box-shadow: 0 0 0 5px var(--color-line-4);
             width: .4rem;
             height: .4rem;
             border-radius: 12px;
@@ -735,7 +733,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -749,12 +747,12 @@
 
     &.lacoma,
     &.tomas-valiente {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -765,7 +763,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -778,7 +776,7 @@
     }
 
     &.parc-cientific {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
         flex-direction: column-reverse;
         position: absolute;
         right: 9rem;
@@ -786,9 +784,9 @@
         width: 100px;
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -798,7 +796,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 height: 7px;
                 width: 4px;
@@ -815,12 +813,12 @@
     &.santjoan,
     &.lagranja,
     &.palau-congresos {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -831,7 +829,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -844,15 +842,15 @@
     }
     
     &.vaestelles  {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
         position: relative;
         z-index: 1;
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -864,7 +862,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;
@@ -877,15 +875,15 @@
     }
 
      &.empalme  {
-        font-weight: $font-bold;
+        font-weight: var(--font-bold);
         text-transform: uppercase;
         position: relative;
         z-index: 1;
 
         .dot {
-            background-color: $color-full-black;
-            border: 1.5px solid $color-full-white;
-            box-shadow: 0 0 0 1.5px $color-full-black;
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
             width: .15rem;
             height: .15rem;
             border-radius: 12px;
@@ -897,7 +895,7 @@
 
             &::after {
                 content: "";
-                background-color: $color-full-black;
+                background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
                 height: 4px;

@@ -1,23 +1,21 @@
 
-@use "variables" as *;
-
-// headers
+/* headers */
 h2,
 .h2 {
-    font-weight: $font-light;
+    font-weight: var(--font-light);
     font-size: 24px;
     line-height: 32px;
 }
 
 
-// texts
+/* texts */
 .logo {
-    font-family: $font-secondary;
+    font-family: var(--font-secondary);
     font-size: 48px;
 
     .m {
-        color: $color-full-white;
-        background-color: $color-corporative-red;
+        color: var(--color-full-white);
+        background-color: var(--color-corporative-red);
         border-radius: 100px;
         padding: 8px 1px 4px 24px;    
     }
@@ -28,17 +26,17 @@ h2,
     }
 
     .valencia {
-        font-weight: $font-light;
+        font-weight: var(--font-light);
     }
 }
 
 nav {
 
     .label-tag {
-        color: $color-full-white;
+        color: var(--color-full-white);
         font-size: 14px;
         line-height: 18px;
-        font-weight: $font-regular;
+        font-weight: var(--font-regular);
         
         .linea,
         .line-1,
@@ -55,38 +53,38 @@ nav {
         }
     
         .linea {
-            background-color: $color-full-black;
+            background-color: var(--color-full-black);
         }
     
         .line-1 {
-            background-color: $color-line-1b;
+            background-color: var(--color-line-1b);
         }
         .line-2 {
-            background-color: $color-line-2b;
+            background-color: var(--color-line-2b);
         }
         .line-3 {
-            background-color: $color-line-3b;
+            background-color: var(--color-line-3b);
         }
         .line-4 {
-            background-color: $color-line-4b;
+            background-color: var(--color-line-4b);
         }
         .line-5 {
-            background-color: $color-line-5b;
+            background-color: var(--color-line-5b);
         }
         .line-6 {
-            background-color: $color-line-6b;
+            background-color: var(--color-line-6b);
         }
         .line-7 {
-            background-color: $color-line-7b;
+            background-color: var(--color-line-7b);
         }
         .line-8 {
-            background-color: $color-line-8b;
+            background-color: var(--color-line-8b);
         }
         .line-9 {
-            background-color: $color-line-9b;
+            background-color: var(--color-line-9b);
         }
         .line-10 {
-            background-color: $color-line-10b;
+            background-color: var(--color-line-10b);
         }
     }
 }
@@ -103,7 +101,7 @@ aside {
 }
 
 .title-section {
-    font-family: $font-tertiary;
+    font-family: var(--font-tertiary);
 
     .title-section-item {
         font-weight: 500;
@@ -111,8 +109,8 @@ aside {
 }
 
 .feature-line {
-    font-family: $font-tertiary;
-    font-weight: $font-light;
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-light);
     font-size: 14px;
     line-height: 16px;
     padding-bottom: .5rem;
@@ -120,8 +118,8 @@ aside {
 
 
 .line-num {
-    color: $color-full-white;
-    font-weight: $font-bold;
+    color: var(--color-full-white);
+    font-weight: var(--font-bold);
     font-size: 30px;
     line-height: 36px;
     border-radius: 6px;
@@ -131,34 +129,34 @@ aside {
     justify-content: center;
 
     &.line-1 {
-        background-color: $color-line-1;
+        background-color: var(--color-line-1);
     }
     &.line-2 {
-        background-color: $color-line-2;
+        background-color: var(--color-line-2);
     }
     &.line-3 {
-        background-color: $color-line-3;
+        background-color: var(--color-line-3);
     }
     &.line-4 {
-        background-color: $color-line-4;
+        background-color: var(--color-line-4);
     }
     &.line-5 {
-        background-color: $color-line-5;
+        background-color: var(--color-line-5);
     }
     &.line-6 {
-        background-color: $color-line-6;
+        background-color: var(--color-line-6);
     }
     &.line-7 {
-        background-color: $color-line-7;
+        background-color: var(--color-line-7);
     }
     &.line-8 {
-        background-color: $color-line-8;
+        background-color: var(--color-line-8);
     }
     &.line-9 {
-        background-color: $color-line-9;
+        background-color: var(--color-line-9);
     }
     &.line-10 {
-        background-color: $color-line-10;
+        background-color: var(--color-line-10);
         letter-spacing: -3px;
         justify-content: flex-start;
     }
@@ -198,7 +196,7 @@ aside {
     align-items: center;
 
     h3 {
-      font-family: $font-tertiary;
+      font-family: var(--font-tertiary);
       font-size: 1rem;
       line-height: 1.2rem;
     }
@@ -212,15 +210,15 @@ aside {
     gap: .2rem;
 
     h3 {
-      font-family: $font-tertiary;
+      font-family: var(--font-tertiary);
       font-size: 1rem;
       line-height: 1.2rem;
     }
   }
 
   .feature-content {
-    font-family: $font-tertiary;
-    font-weight: $font-light;
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-light);
     font-size: 14px;
     line-height: 16px;
   }
@@ -228,13 +226,13 @@ aside {
 
 
 
-// utilities
+/* utilities */
 .font-medium {
-    font-weight: $font-medium;
+    font-weight: var(--font-medium);
 }
 
 .font-bold {
-    font-weight: $font-bold;
+    font-weight: var(--font-bold);
 }
 
 .uppercase {
