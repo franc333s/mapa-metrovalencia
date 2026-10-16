@@ -7,7 +7,7 @@
         top: 172px;
         left: 680px;
 
-        background-color: rgba(23, 107, 171, 0.651);
+        background-color: rgba(227, 169, 22, 0.471);
 
         .feature-line {
 
@@ -18,13 +18,59 @@
             }
         }
         .part-1 {
+            border-right: 8px solid var(--color-line-1);
+            border-bottom: 8px solid var(--color-line-1);
+            height: 304px;
             position: absolute;
-            background-color: var(--color-line-1);
-            height: 308px;
-            width: 8px;
-            top: 50px;
+            top: 49px;
             left: 1px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                box-sizing: border-box;
+                width: 52px;
+                height: 52px;
+                right: -8px;
+                top: 285px;
+                border: 8px solid var(--color-line-1);
+                border-radius: 50%;
+                clip-path: polygon(50% 50%, 100% 50%, 100% 100%);
+            }
         }
+    
+        .part-2 {
+            background-color: var(--color-line-1);
+            position: absolute;
+            height: 108px;
+            width: 8px;
+            top: 359px;
+            right: 220px;
+            transform: rotate(45deg);
+        }
+
+        .part-3 {
+            background-color: var(--color-line-1);
+            position: absolute;
+            height: 8px;
+            width: 146px;
+            top: 454px;
+            right: 278px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                box-sizing: border-box;
+                width: 56px;
+                height: 56px;
+                right:  -27px;
+                top: -48px;
+                border: 8px solid var(--color-line-1);
+                border-radius: 50%;
+                clip-path: polygon(50% 50%, 100% 100%, 50% 100%);
+            }
+        }
+
     }
 
     &.two {
@@ -36,7 +82,7 @@
         top: 14px;
         left: 82px;
 
-        background-color: rgba(255, 166, 2, 0.624);
+        background-color: rgba(184, 87, 137, 0.497);
 
         .feature-line {
 
@@ -66,7 +112,7 @@
             display: flex;
             flex-direction: column-reverse;
 
-            background-color: rgba(255, 0, 0, 0.59);
+            background-color: rgba(9, 68, 169, 0.382);
 
             .feature-line {
 
@@ -161,7 +207,7 @@
             left: 297px;
             display: flex;
             
-            background-color: rgba(0, 128, 0, 0.668);
+            background-color: rgba(9, 68, 169, 0.382);
 
             .feature-line {
                 align-self: flex-end;
@@ -188,10 +234,11 @@
             }
         }
         &.block-3 {
-            background-color: rgba(253, 224, 36, 0.78);
             position: absolute;
             top: 268px;
             left: 516px;
+
+            background-color: rgba(9, 68, 169, 0.382);
 
             .feature-line {
 
