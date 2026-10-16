@@ -7,7 +7,6 @@
         top: 172px;
         left: 680px;
 
-        
         background-color: rgba(23, 107, 171, 0.651);
 
         .feature-line {
@@ -15,15 +14,15 @@
             .line-num.line-1 {
                 position: absolute;
                 top: 3px;
-                right: 158px;
+                right: 168px;
             }
         }
         .part-1 {
             position: absolute;
             background-color: var(--color-line-1);
-            height: 200px;
+            height: 308px;
             width: 8px;
-            top: 2.2rem;
+            top: 50px;
             left: 1px;
         }
     }

@@ -4,5 +4,21 @@ header {
     margin: 2rem 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: self-end;
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: end;
+        gap: .5rem;
+
+        p:first-child {
+            color: rgb(129, 129, 150);
+            font-style: italic;
+        }
+
+        p:last-child {
+            font-weight: 600;
+        }
+    }
 }
