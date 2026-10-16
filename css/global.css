@@ -6,5 +6,7 @@
 @import url("iconography.css");
 @import url("header.css");
 @import url("nav.css");
-@import url("lines-stations.css");
+@import url("map.css");
+@import url("routes.css");
+@import url("stations.css");
 @import url("aside.css");

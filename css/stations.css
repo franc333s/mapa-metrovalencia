@@ -1,229 +1,29 @@
-/* línea 1 */
-.map {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    border: 1px solid blue;
-    height: 100vh;
-}
-.route {
-    /* background-color: rgba(250, 235, 215, 0.426); */
-    height: auto;
-
-    &.one {
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        border: 1px solid red;
-
-        .part-1 {
-            position: absolute;
-            background-color: var(--color-line-1);
-            height: 200px;
-            width: 8px;
-            top: 2.2rem;
-            left: 1px;
-        }
-    }
-
-    &.two {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-
-        border: 1px dotted red;
-
-        .part-1 {
-            position: absolute;
-            background-color: var(--color-line-2);
-            height: 400px;
-            width: 8px;
-            top: 2.2rem;
-            right: 1px;
-        }
-    }
-
-    &.four {
-    
-        &.block-1 {
-            position: absolute;
-            top: 15rem;
-            left: 17.5rem;
-            display: flex;
-            flex-direction: column-reverse;
-
-            border: 1px solid red;
-
-            .part-1 {
-                position: absolute;
-                border-left: 3px solid var(--color-line-4);
-                border-right: 3px solid var(--color-line-4);
-                background-color: var(--color-full-white);
-                height: 50px;
-                width: 4px;
-                bottom: 3.3rem;
-                left: 0;
-
-                &::before,
-                &::after {
-                    background-color: var(--color-full-white);
-                    display: block;
-                    border: 3px solid var(--color-line-4);
-                    clip-path: polygon(50% 50%, 0 50%, 0 0, 50% 0);
-                    position: absolute;
-                    border-radius: 100px;
-                }
-
-                &::before {
-                    content: "";
-                    width: 32px;
-                    height: 32px;
-                    bottom: 31px;
-                    left: -3px;
-                }
-
-                &::after {
-                    content: "";
-                    width: 21px;
-                    height: 21px;
-                    bottom: 35px;
-                    left: 4px;
-                }
-            }
-
-            .part-2 {
-                position: absolute;
-                border-top: 3px solid var(--color-line-4);
-                border-bottom: 3px solid var(--color-line-4);
-                background-color: var(--color-full-white);
-                width: 90px;
-                height: 4px;
-                bottom: 112px;
-                left: 19px;
-
-                &::before,
-                &::after {
-                    background-color: var(--color-full-white);
-                    display: block;
-                    border: 3px solid var(--color-line-4);
-                    clip-path: polygon(50% 50%, 100% 50%, 100% 0, 50% 0);
-                    position: absolute;
-                    border-radius: 100px;
-                    z-index: 1;
-                }
-
-                &::before {
-                    content: "";
-                    width: 30px;
-                    height: 30px;
-                    top: -3px;
-                    left: 69px;
-                }
-
-                &::after {
-                    content: "";
-                    width: 18px;
-                    height: 18px;
-                    top: 4px;
-                    left: 75px;
-                }
-            }
-        }
-        &.block-2 {
-            position: absolute;
-            top: 6rem;
-            left: 18rem;
-            display: flex;
-
-            border: 1px solid green;
-
-            .feature-line {
-                align-self: flex-end;
-                position: absolute;
-                bottom: -16px;
-                left: 12px;
-            }
-
-            .part-1 {
-                position: absolute;
-                border-top: 8px solid var(--color-line-4);
-                border-right: 8px solid var(--color-line-4);
-                border-top-right-radius: 20px;
-                height: 20px;
-                width: 60px;
-                top: .5rem;
-                left: 35.5px;
-            }
-        }
-        &.block-3 {
-            border: 1px solid orange;
-            position: absolute;
-            top: 0;
-            left: 31.85rem;
-
-            .part-1 {
-                position: absolute;
-                border-right: 8px solid var(--color-line-4);
-                border-bottom: 8px solid var(--color-line-4);
-                border-bottom-right-radius: 20px;
-                height: 114px;
-                width: 3rem;
-                top: 2.2rem;
-                left: -2.9rem;
-            }
-            .part-2 {
-                position: absolute;
-                border-top: 8px solid var(--color-line-4);
-                border-left: 8px solid var(--color-line-4);
-                border-top-left-radius: 20px;
-                height: 10px;
-                width: 60px;
-                top: 9.3rem;
-                right: 11.7rem;
-            }
-
-            .part-3 {
-                position: absolute;
-                border-top: 8px solid var(--color-line-4);
-                border-left: 8px solid var(--color-line-4);
-                border-top-left-radius: 20px;
-                height: 60px;
-                width: 60px;
-                top: 9.3rem;
-                right: 11.7rem;
-            }
-        }
-
-        &.block-4 {
-            position: absolute;
-            top: 10.1rem;
-            left: 24.78rem;
-
-            .part-1 {
-                position: absolute;
-                background-color: var(--color-line-4);
-                height: 200px;
-                width: 8px;
-                top: 0;
-                left: 0.0;
-            }
-        }
-
-    }
-}
-
 .station {
     font-family: var(--font-tertiary);
     display: flex;
     align-items: center;
-    gap: .3rem;
+    
+    .feature-icon {
+        display: flex;
+        align-items: center;
+        font-size: 6px;
+        font-weight: var(--font-light);
+
+        .metro-icon {
+            font-size: 6px;
+            width: 10px;
+            height: 10px;
+            padding: 1px 0 0 1px;
+            margin-left: .5px;
+        }
+        .parking-icon {
+            font-size: 10px;
+            line-height: 10px;
+            border-radius: 1px;
+            padding: .5px 1.5px;    
+            margin-right: .5px;
+        }
+    }
 
     /* linea 1 */
     &.betera {
@@ -233,7 +33,7 @@
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 5px var(--color-line-1);
+            box-shadow: 0 0 0 4.5px var(--color-line-1);
             width: .4rem;
             height: .4rem;
             border-radius: 12px;
@@ -517,28 +317,33 @@
     &.lliria {
         font-weight: var(--font-bold);
         text-transform: uppercase;
+        margin-top: 21px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 5px var(--color-line-2);
-            width: .4rem;
-            height: .4rem;
+            box-shadow: 0 0 0 4.5px var(--color-line-2);
+            width: 7px;
+            height: 7px;
             border-radius: 12px;
             position: relative;
-            margin-left: .5rem;
 
             &::before {
                 content: "";
                 background-color: var(--color-full-black);
                 border-radius: 4px;
-                width: 7px;
-                height: 4px;
+                width: 8px;
+                height: 6px;
                 position: absolute;
-                top: 1px;
+                top: 0px;
                 right: .6rem;
                 z-index: -1;
             }
+        }
+
+        p {
+            margin-right: 13px;
+            margin-left: 2px;
         }
     }
     &.benaguasil,
@@ -555,13 +360,12 @@
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            right: 2px;
-            margin-left: .7rem;
+            right: 2.5px;
 
             &::after {
                 content: "";
@@ -574,6 +378,11 @@
                 right: 2px;
                 z-index: -1;
             }
+        }
+
+        p {
+            margin-right: 17px;
+            margin-left: 5px;
         }
     }
 
@@ -591,13 +400,12 @@
             background-color: var(--color-full-black);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            right: 2px;
-            margin-left: .7rem;
+            right: 2.5px;
 
             &::before {
                 content: "";
@@ -611,23 +419,42 @@
                 z-index: -1;
             }
         }
+
+        p {
+            margin-right: 17px;
+            margin-left: 5px;
+        }
     }
 
     &.paterna {
         font-weight: var(--font-bold);
         text-transform: uppercase;
+        margin-top: 3px;
+
+        .station-name {
+            margin-right: 18px;
+            margin-left: 3px;
+        }
+
+        .small {
+            font-size: 21px;
+            line-height: 22px;
+            border-radius: 3px;
+            width: 20px;
+            height: 20px;
+            margin-left: 3px;
+        }
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
             right: 2px;
-            margin-left: .7rem;
 
             &::after {
                 content: "";
@@ -641,41 +468,85 @@
                 z-index: -1;
             }
         }
-
-        .small {
-            font-size: 1rem;
-            width: 1.5rem;
-            height: 1.5rem;
-        }
+    }
+    &.benaguasil {
+        margin-top: 5px;
+    }
+    &.fondo-benaguasil {
+        margin-top: 3px;
+    }
+    &.poblavallbona {
+        margin-top: 3px;
+    }
+    &.galipont-torre {
+        margin-top: 4px;
+    }
+    &.leliana {
+        margin-top: 3px;
+    }
+    &.montesol {
+        margin-top: 4px;
+    }
+    &.elclot {
+        margin-top: 3px;
+    }
+    &.entrepins {
+        margin-top: 3px;
+    }
+    &.lavallesa {
+        margin-top: 52px;
+    }
+    &.lacanyada {
+        margin-top: 3px;
+    }
+    &.fuentejarro {
+        margin-top: 3px;
+    }
+    &.santarita {
+        margin-top: 3px;
+    }
+    &.campament {
+        margin-top: 03px;
+    }
+    &.carolines-fira {
+        margin-top: 27px;
+    }
+    &.benimamet {
+        margin-top: 3px;
+    }
+    &.cantereria {
+        margin-top: 3px;
     }
 
     /* línia 4 */
     &.fira-vlc {
-        font-weight: var(--font-bold);
-        text-transform: uppercase;
         
-        p {
-            width: 40px;
+        .station-name {
+            font-weight: var(--font-bold);
+            text-transform: uppercase;
+            line-height: 15px;
+            width: 72px;
+            margin-top: 7px;
+            margin-left: 15px;
         }
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 5px var(--color-line-4);
-            width: .4rem;
-            height: .4rem;
+            box-shadow: 0 0 0 4.5px var(--color-line-4);
+            width: 7px;
+            height: 7px;
             border-radius: 12px;
             position: relative;
-            margin-right: .5rem;
 
             &::after {
                 content: "";
                 background-color: var(--color-full-black);
                 border-radius: 4px;
-                width: 7px;
-                height: 4px;
+                width: 8px;
+                height: 6px;
                 position: absolute;
-                top: 1px;
+                top: 0.5px;
                 left: .6rem;
                 z-index: -1;
             }
@@ -687,31 +558,31 @@
         flex-direction: column-reverse;
         gap: 14px;
 
-        p {
-            width: 120px;
+        .station-name {
+            line-height: 15px;
             text-align: center;
+            width: 120px;
         }
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 5px var(--color-line-4);
-            width: .4rem;
-            height: .4rem;
+            box-shadow: 0 0 0 4.5px var(--color-line-4);
+            width: 7px;
+            height: 7px;
             border-radius: 12px;
             position: relative;
-            margin-right: .5rem;
-            transform: rotate(-90deg);
+            bottom: 1px;
 
             &::after {
                 content: "";
                 background-color: var(--color-full-black);
                 border-radius: 4px;
-                width: 7px;
-                height: 4px;
+                width: 6px;
+                height: 7px;
                 position: absolute;
-                top: 1px;
-                left: .6rem;
+                bottom: 10px;
+                left: 0.5px;
                 z-index: -1;
             }
         }
@@ -719,29 +590,33 @@
     &.mas-rosari {
         font-weight: var(--font-bold);
         text-transform: uppercase;
+        margin-top: 27px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 5px var(--color-line-4);
-            width: .4rem;
-            height: .4rem;
+            box-shadow: 0 0 0 4.5px var(--color-line-4);
+            width: 7px;
+            height: 7px;
             border-radius: 12px;
             position: relative;
-            margin-right: .5rem;
-            left: 3.0;
+            left: 2px;
 
             &::after {
                 content: "";
                 background-color: var(--color-full-black);
                 border-radius: 4px;
                 width: 7px;
-                height: 4px;
+                height: 6px;
                 position: absolute;
                 top: 1px;
-                left: .6rem;
+                left: 8px;
                 z-index: -1;
             }
+        }
+
+        .station-name {
+            margin-left: 14px;
         }
     }
 
@@ -753,13 +628,12 @@
             background-color: var(--color-full-black);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
-            margin-right: .7rem;
+            left: 4.5px;
 
             &::after {
                 content: "";
@@ -775,24 +649,37 @@
         }
     }
 
+    &.lacoma {
+        margin-top: 5px;
+        
+        p {
+            margin-left: 19px;
+        }
+    }
+    &.tomas-valiente {
+         margin-top: 2px;
+        
+        p {
+            margin-left: 20px;
+        }
+    }
+
     &.parc-cientific {
         font-weight: var(--font-light);
         flex-direction: column-reverse;
         position: absolute;
-        right: 9rem;
-        top: 7.8rem;
+        right: 141px;
+        top: 114px;
         width: 100px;
 
         .dot {
             background-color: var(--color-full-black);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
-            margin-right: .7rem;
-            
 
             &::after {
                 content: "";
@@ -803,6 +690,48 @@
                 position: absolute;
                 bottom: 2px;
                 right: -1px;
+                z-index: -1;
+            }
+        }
+
+        .station-name {
+            position: relative;
+            bottom: 8px;
+        }
+    }
+
+    &.vaestelles  {
+        font-weight: var(--font-bold);
+        text-transform: uppercase;
+        margin-top: 0px;
+        position: relative;
+        z-index: 1;
+
+        p {
+            margin-left: 18px;
+        }
+
+        .dot {
+            background-color: var(--color-full-black);
+            border: 1.5px solid var(--color-full-white);
+            box-shadow: 0 0 0 1.5px var(--color-full-black);
+            width: 2px;
+            height: 2px;
+            border-radius: 12px;
+            position: relative;
+            top: -2px;
+            left: 2px;
+            
+
+            &::after {
+                content: "";
+                background-color: var(--color-full-black);
+                border-radius: 4px;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                top: -.75px;
+                left: 2px;
                 z-index: -1;
             }
         }
@@ -819,13 +748,12 @@
             background-color: var(--color-full-black);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
-            margin-right: .7rem;
+            left: 1.5px;
 
             &::after {
                 content: "";
@@ -838,10 +766,41 @@
                 left: 2px;
                 z-index: -1;
             }
+        }
+    }
+
+    &.apunt {
+        margin-top: 1px;
+
+        p {
+            margin-left: 18px;
+        }
+    }
+    &.campus {
+        margin-top: 0px;
+
+        p {
+            margin-left: 18px;
+        }
+    }
+    &.santjoan {
+        margin-top: 3px;
+
+        p {
+            margin-left: 18px;
+        }
+    }
+    &.lagranja {
+        margin-top: 3px;
+
+        p {
+            margin-left: 18px;
         }
     }
     
-    &.vaestelles  {
+    
+
+     /* &.empalme  {
         font-weight: var(--font-bold);
         text-transform: uppercase;
         position: relative;
@@ -872,54 +831,27 @@
                 z-index: -1;
             }
         }
+    } */
+
+    &.palau-congresos {
+        margin-top: 138px;
+
+        .station-name {
+            line-height: 12px;
+            width: 60px;
+            margin-left: 18px;
+
+        }       
     }
-
-     &.empalme  {
-        font-weight: var(--font-bold);
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1;
-
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2px;
-            margin-right: .7rem;
-            
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
-    }
-
-
-
-
-
-
-    .m-icon {
+    /* .metro-icon {
+        font-size: 6px;
+        font-weight: 700;
         padding-left: 6px;    
-        font-size: .5rem;
-        text-transform: lowercase;
     }
-    .p-icon {
+
+    .parking-icon {
         font-size: .7rem;
         border-radius: 2px;
         padding: 1px 3px;    
-    }
+    } */
 }
