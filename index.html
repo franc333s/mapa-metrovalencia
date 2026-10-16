@@ -11,8 +11,9 @@
         <h1 class="logo">
             <span class="m">m</span><span class="etro">etro</span><span class="valencia">valencia</span>
         </h1>
-        <div>
-            <p>Rèplica del mapa de Metrovalencia fet amb HTML i SCSS.</p>
+        <div class="info">
+            <p>Best viewed on screens wider than 1440px.</p>
+            <p>Replica of the Metrovalencia map made with HTML and CSS.</p>
         </div>
     </header>
     <nav>
@@ -31,7 +32,7 @@
         </ul>
     </nav>
 
-    <main style=" margin: 3rem;">
+    <main>
         <section class="map">
             <div>
                 <ul class="route two">
@@ -41,8 +42,8 @@
                     </li>
                     <li class="station lliria">
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                         <p>Llíria</p>
                         <span class="dot"></span>
@@ -53,16 +54,16 @@
                     </li>
                     <li class="station fondo-benaguasil">
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                         <p>Fondo de Benaguasil</p>
                         <span class="dot"></span>
                     </li>
                     <li class="station poblavallbona">
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                         <p>La Pobla de Vallbona</p>
                         <span class="dot"></span>
@@ -73,8 +74,8 @@
                     </li>
                     <li class="station leliana">
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                         <p>L'Eliana</p>
                         <span class="dot"></span>
@@ -101,27 +102,27 @@
                     </li>
                     <li class="station fuentejarro">
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                         <p>Fuente del Jarro</p>
                         <span class="dot"></span>
                     </li>
                     <li class="station santarita">
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                         <p>Santa Rita</p>
                         <span class="dot"></span>
                     </li>
                     <li class="station paterna">
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                         <p class="line-num line-2 small"><span>2</span></p>
-                        <p>Paterna</p>
+                        <p class="station-name">Paterna</p>
                         <span class="dot"></span>
                     </li>
                     <li class="station campament">
@@ -142,6 +143,7 @@
                     </li>
                 </ul>
             </div>
+
             <div>
                 <!-- Linia 4 nord -->
                 <ul class="route four block-1">
@@ -153,7 +155,7 @@
                     </li>
                     <li class="station fira-vlc">
                         <span class="dot"></span>
-                        <p>Fira València</p>
+                        <p class="station-name">Fira València</p>
                     </li>
                 </ul>
                 <ul class="route four block-2">
@@ -163,7 +165,7 @@
                     </li>
                     <li class="station llomallarga-terramelar">
                         <span class="dot"></span>
-                        <p>Lloma llarga Terramelar</p>
+                        <p class="station-name">Lloma llarga Terramelar</p>
                     </li>
                 </ul>
                 <ul class="route four block-3">
@@ -174,7 +176,7 @@
                     </li>
                     <li class="station mas-rosari">
                         <span class="dot"></span>
-                        <p>Mas del Rosari</p>
+                        <p class="station-name">Mas del Rosari</p>
                     </li>
                     <li class="station lacoma">
                         <span class="dot"></span>
@@ -186,10 +188,9 @@
                     </li>
                     <li class="station parc-cientific">
                          <span class="dot"></span>
-                         <p>Parc Científic</p>
+                         <p class="station-name">Parc Científic</p>
                     </li>
-                </ul>
-                
+                </ul>           
                 <ul class="route four block-4">
                     <li class="feature-line">
                         <span class="part-1"></span>
@@ -216,14 +217,14 @@
                          <span class="dot"></span>
                          <p>La Granja</p>
                     </li>
-                    <li class="station vaestelles">
+                    <!-- <li class="station vaestelles">
                         <span class="dot"></span>
                         <p>Empalme</p>
                         <p class="line-num line-4 small"><span>4</span></p>
-                    </li>
+                    </li> -->
                     <li class="station palau-congresos">
                          <span class="dot"></span>
-                         <p>Palau de Congresos</p>
+                         <p class="station-name">Palau de Congresos</p>
                     </li>
                 </ul>
             </div>
@@ -237,8 +238,8 @@
                         <span class="dot"></span>
                         <p>Bétera</p>
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                     </li>
                     <li class="station horta-vella">
@@ -254,8 +255,8 @@
                         <p>Seminari - Ceu</p>
                         <p class="line-num line-1 small"><span>1</span></p>
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                     </li>
                     <li class="station moncada-alfara">
@@ -266,16 +267,16 @@
                         <span class="dot"></span>
                         <p>Massarrojos</p>
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                     </li>
                     <li class="station rocafort">
                         <span class="dot"></span>
                         <p>Rocafort</p>
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                     </li>
                     <li class="station godella">
@@ -286,16 +287,16 @@
                         <span class="dot"></span>
                         <p>Burjassot - Godella</p>
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                     </li>
                       <li class="station burjassot">
                         <span class="dot"></span>
                         <p>Burjassot</p>
                         <div class="feature-icon">
-                            <span class="p-icon">p</span> +
-                            <span class="m-icon">m</span>
+                            <span class="parking-icon">p</span> +
+                            <span class="metro-icon">m</span>
                         </div>
                     </li>
                 </ul>
@@ -407,8 +408,8 @@
                 </li>
                 <li class="feature-item"> 
                     <div class="feature-icon">
-                        <span class="p-icon">p</span> +
-                        <span class="m-icon">m</span>
+                        <span class="parking-icon">p</span> +
+                        <span class="metro-icon">m</span>
                     </div>
                     <div class="feature-content">
                         <p class="font-medium">Aparcament públic gratuït</p>
@@ -426,7 +427,7 @@
                 </li>
                 <li class="feature-item"> 
                     <div class="feature-icon">
-                        <div class="pasarela-wip-icon"></div>
+                        <div class="pasarela-wiparking-icon"></div>
                     </div>
                     <div class="feature-content">
                         <p class="font-medium">Passarel.la vianants en construcció</p>
@@ -435,7 +436,7 @@
                 </li>
                 <li class="feature-item"> 
                     <div class="feature-icon">
-                        <div class="pasarela-tram-icon"></div>
+                        <div class="pasarela-trametro-icon"></div>
                     </div>
                     <div class="feature-content">
                         <p class="font-medium">Tram pel qual els tramvies només circulen els dies de Fira</p>
@@ -444,7 +445,7 @@
                 </li>
                 <li class="feature-item"> 
                     <div class="feature-icon">
-                        <div class="parada-comp-icon"></div>
+                        <div class="parada-comparking-icon"></div>
                     </div>
                     <div class="feature-content">
                         <p class="font-medium">Parada amb andanes compartides per les línies</p>
