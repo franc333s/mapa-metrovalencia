@@ -29,16 +29,19 @@
     &.betera {
         font-weight: var(--font-bold);
         text-transform: uppercase;
+        margin-top: 27px;
 
+        .station-name {
+            margin-left: 11px;
+        }
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-black);
             box-shadow: 0 0 0 4.5px var(--color-line-1);
-            width: .4rem;
-            height: .4rem;
+            width: 7px;
+            height: 7px;
             border-radius: 12px;
             position: relative;
-            margin-right: .5rem;
 
             &::after {
                 content: "";
@@ -47,7 +50,7 @@
                 width: 7px;
                 height: 4px;
                 position: absolute;
-                top: 1px;
+                top: 0;
                 left: .6rem;
                 z-index: -1;
             }
@@ -55,17 +58,18 @@
     }
     &.horta-vella {
         font-weight: var(--font-light);
+        margin-top: 4px;
 
         .dot {
             background-color: var(--color-full-black);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -83,17 +87,17 @@
     }
     &.masies {
         font-weight: var(--font-light);
-
+        margin-top: 53px;
         .dot {
             background-color: var(--color-full-black);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -112,17 +116,18 @@
     &.seminari-ceu {
         font-weight: var(--font-bold);
         text-transform: uppercase;
+        margin-top: 3px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -138,25 +143,24 @@
             }
         }
 
-        .small {
-            font-size: 1rem;
-            width: 1.5rem;
-            height: 1.5rem;
+        .feature-icon {
+            margin-left: 5px;
         }
     }
     &.moncada-alfara {
         font-weight: var(--font-light);
+        margin-top: 3px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -174,17 +178,18 @@
     }
     &.massarrojos {
         font-weight: var(--font-light);
+        margin-top: 26px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -202,17 +207,18 @@
     }
     &.rocafort {
         font-weight: var(--font-light);
+        margin-top: 3px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -230,17 +236,18 @@
     }
     &.godella {
         font-weight: var(--font-light);
+        margin-top: 26px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -258,17 +265,18 @@
     }
     &.burjassot-godella {
         font-weight: var(--font-light);
+        margin-top: 4px;
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -286,17 +294,22 @@
     }
     &.burjassot {
         font-weight: var(--font-light);
+        margin-top: 3px;
+        
+        .station-name {
+            margin-right: 4px;
+        }
 
         .dot {
             background-color: var(--color-full-white);
             border: 1.5px solid var(--color-full-white);
             box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
+            width: 2px;
+            height: 2px;
             border-radius: 12px;
             position: relative;
             top: 0;
-            left: 2px;
+            left: 2.5px;
             margin-right: .7rem;
 
             &::after {
@@ -311,6 +324,33 @@
                 z-index: -1;
             }
         }
+    }
+
+    &.horta-vella, 
+    &.masies, 
+    &.seminari-ceu, 
+    &.moncada-alfara, 
+    &.massarrojos, 
+    &.rocafort, 
+    &.godella, 
+    &.burjassot-godella, 
+    &.burjassot {
+
+        .station-name {
+            margin-left: 5px;
+        }
+    }
+
+    &.betera,
+    &.seminari-ceu,
+    &.massarrojos,
+    &.rocafort,
+    &.burjassot-godella,
+    &.burjassot {
+
+        .station-name {
+                margin-right: 4px;
+            }
     }
 
     /* linea 2 */
@@ -341,7 +381,7 @@
             }
         }
 
-        p {
+        .station-name {
             margin-right: 13px;
             margin-left: 2px;
         }
@@ -380,7 +420,7 @@
             }
         }
 
-        p {
+        .station-name {
             margin-right: 17px;
             margin-left: 5px;
         }
@@ -420,7 +460,7 @@
             }
         }
 
-        p {
+        .station-name {
             margin-right: 17px;
             margin-left: 5px;
         }
@@ -437,11 +477,6 @@
         }
 
         .small {
-            font-size: 21px;
-            line-height: 22px;
-            border-radius: 3px;
-            width: 20px;
-            height: 20px;
             margin-left: 3px;
         }
 
@@ -651,19 +686,10 @@
 
     &.lacoma {
         margin-top: 5px;
-        
-        p {
-            margin-left: 19px;
-        }
     }
     &.tomas-valiente {
-         margin-top: 2px;
-        
-        p {
-            margin-left: 20px;
-        }
+         margin-top: 3px;
     }
-
     &.parc-cientific {
         font-weight: var(--font-light);
         flex-direction: column-reverse;
@@ -703,12 +729,12 @@
     &.vaestelles  {
         font-weight: var(--font-bold);
         text-transform: uppercase;
-        margin-top: 0px;
+        margin-top: 3px;
         position: relative;
         z-index: 1;
 
-        p {
-            margin-left: 18px;
+        .station-name {
+            margin-right: 3px;
         }
 
         .dot {
@@ -771,29 +797,27 @@
 
     &.apunt {
         margin-top: 1px;
-
-        p {
-            margin-left: 18px;
-        }
     }
     &.campus {
-        margin-top: 0px;
-
-        p {
-            margin-left: 18px;
-        }
+        margin-top: 4px;
     }
     &.santjoan {
         margin-top: 3px;
-
-        p {
-            margin-left: 18px;
-        }
     }
     &.lagranja {
         margin-top: 3px;
+    }
+    
 
-        p {
+    &.lacoma,
+    &.tomas-valiente,
+    &.apunt,
+    &.vaestelles,
+    &.campus,
+    &.santjoan,
+    &.lagranja {
+
+        .station-name {
             margin-left: 18px;
         }
     }
@@ -843,15 +867,4 @@
 
         }       
     }
-    /* .metro-icon {
-        font-size: 6px;
-        font-weight: 700;
-        padding-left: 6px;    
-    }
-
-    .parking-icon {
-        font-size: .7rem;
-        border-radius: 2px;
-        padding: 1px 3px;    
-    } */
 }

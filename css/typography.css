@@ -30,6 +30,10 @@ h2,
     }
 }
 
+.station > p:not(.line-num) {
+    letter-spacing: -0.2px;
+}
+
 nav {
 
     .label-tag {
@@ -120,11 +124,11 @@ aside {
 .line-num {
     color: var(--color-full-white);
     font-weight: var(--font-bold);
-    font-size: 30px;
-    line-height: 36px;
-    border-radius: 6px;
-    height: 32px;
-    width: 32px;
+    font-size: 29.5px;
+    line-height: 29.5px;
+    border-radius: 4.5px;
+    height: 26.5px;
+    width: 26.5px;
     display: flex;
     justify-content: center;
 
@@ -162,10 +166,11 @@ aside {
     }
 
     &.small {
-        font-size: 20px;
-        line-height: 26px;
-        height: 26px;
-        width: 26px;
+        font-size: 21px;
+        line-height: 22px;
+        border-radius: 3px;
+        height: 20px;
+        width: 20px;
     }
 }
 
