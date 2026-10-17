@@ -1,0 +1,52 @@
+.dot {
+    /* tamaño del centro, sin contar el borde */
+    --dot-core: 3px;
+    --dot-border: 1px; /* (antes 1.5px) */
+    --dot-ring: 2px;
+    --dot-fill: var(--color-full-black);
+    --dot-border-color: var(--color-full-white);
+    --dot-ring-color: var(--color-full-black);
+    --dot-x: 0px;
+    --dot-y: 0px;
+
+    position: relative;
+    left: var(--dot-x);
+    top: var(--dot-y);
+    width: calc(var(--dot-core) + 2 * var(--dot-border));
+    height: calc(var(--dot-core) + 2 * var(--dot-border));
+    background-color: var(--dot-fill);
+    border: var(--dot-border) solid var(--dot-border-color);
+    box-shadow: 0 0 0 var(--dot-ring) var(--dot-ring-color);
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: var(--tick-w, 7px);
+        height: var(--tick-h, 4px);
+        top: var(--tick-top, -.75px);
+        bottom: var(--tick-bottom, auto);
+        left: var(--tick-left, auto);
+        right: var(--tick-right, auto);
+        background-color: var(--color-full-black);
+        border-radius: 4px;
+    }
+}
+
+.station:is(.betera, .lliria, .fira-vlc, .llomallarga-terramelar, .mas-rosari) .dot {
+    --dot-core: 6px;
+    --dot-border: 2.5px;
+    --dot-ring: 4px;
+    --dot-fill: var(--color-full-white);
+    --dot-border-color: var(--color-full-black);
+    --dot-ring-color: var(--line-color);
+}
+
+.station:is(.seminari-ceu, .moncada-alfara, .massarrojos, .rocafort, .godella,
+            .burjassot-godella, .burjassot, .benaguasil, .fondo-benaguasil,
+            .leliana, .lacanyada, .campament, .carolines-fira, .benimamet,
+            .cantereria, .paterna) .dot {
+    --dot-fill: var(--color-full-white);
+}
+

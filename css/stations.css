@@ -1,5 +1,6 @@
 .station {
     font-family: var(--font-tertiary);
+    font-weight: var(--font-light);
     display: flex;
     align-items: center;
     
@@ -25,307 +26,68 @@
         }
     }
 
-    /* linea 1 */
+    /* --- linea 1 --- */
     &.betera {
         font-weight: var(--font-bold);
         text-transform: uppercase;
-        margin-top: 27px;
+        margin-top: 26px;
 
         .station-name {
-            margin-left: 11px;
-        }
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 4.5px var(--color-line-1);
-            width: 7px;
-            height: 7px;
-            border-radius: 12px;
-            position: relative;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: 0;
-                left: .6rem;
-                z-index: -1;
-            }
+            margin-left: 10px;
         }
     }
-    &.horta-vella {
-        font-weight: var(--font-light);
-        margin-top: 4px;
 
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
+    &.horta-vella,
+    &.masies,
+    &.seminari-ceu,
+    &.moncada-alfara,
+    &.massarrojos,
+    &.rocafort,
+    &.godella,
+    &.burjassot-godella,
+    &.burjassot {
 
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
+        .dot { 
+            --dot-x: 3px; 
+            --tick-left: 2px; 
         }
+    }
+
+    &.horta-vella {
+        margin-top: 5px; 
     }
     &.masies {
-        font-weight: var(--font-light);
         margin-top: 53px;
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     }
     &.seminari-ceu {
         font-weight: var(--font-bold);
         text-transform: uppercase;
         margin-top: 3px;
 
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
-
-        .feature-icon {
-            margin-left: 5px;
+        .feature-icon { 
+            margin-left: 5px; 
         }
     }
     &.moncada-alfara {
-        font-weight: var(--font-light);
         margin-top: 3px;
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     }
     &.massarrojos {
-        font-weight: var(--font-light);
         margin-top: 26px;
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     }
     &.rocafort {
-        font-weight: var(--font-light);
         margin-top: 3px;
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     }
     &.godella {
-        font-weight: var(--font-light);
         margin-top: 26px;
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     }
     &.burjassot-godella {
-        font-weight: var(--font-light);
         margin-top: 4px;
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     }
     &.burjassot {
-        font-weight: var(--font-light);
         margin-top: 3px;
-        
-        .station-name {
-            margin-right: 4px;
-        }
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2.5px;
-            margin-right: .7rem;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     }
 
+    /* Left alignment */
     &.horta-vella, 
     &.masies, 
     &.seminari-ceu, 
@@ -337,10 +99,11 @@
     &.burjassot {
 
         .station-name {
-            margin-left: 5px;
+            margin-left: 15px; 
         }
     }
 
+    /* Spacing on the right due to p+m icons */
     &.betera,
     &.seminari-ceu,
     &.massarrojos,
@@ -353,113 +116,45 @@
             }
     }
 
-    /* linea 2 */
+    /* --- linea 2 --- */
     &.lliria {
         font-weight: var(--font-bold);
         text-transform: uppercase;
         margin-top: 21px;
 
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 4.5px var(--color-line-2);
-            width: 7px;
-            height: 7px;
-            border-radius: 12px;
-            position: relative;
-
-            &::before {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 8px;
-                height: 6px;
-                position: absolute;
-                top: 0px;
-                right: .6rem;
-                z-index: -1;
-            }
+        .dot { 
+            --tick-w: 8px; 
+            --tick-h: 6px; 
+            --tick-top: 0px; 
+            --tick-right: .6rem; 
         }
-
-        .station-name {
-            margin-right: 13px;
-            margin-left: 2px;
+        .station-name { 
+            margin-right: 13px; 
+            margin-left: 2px; 
         }
     }
+
     &.benaguasil,
     &.fondo-benaguasil,
-    &.leliana,
-    &.lacanyada,
-    &.campament,
-    &.carolines-fira,
-    &.benimamet, 
-    &.cantereria {
-        font-weight: var(--font-light);
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            right: 2.5px;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                right: 2px;
-                z-index: -1;
-            }
-        }
-
-        .station-name {
-            margin-right: 17px;
-            margin-left: 5px;
-        }
-    }
-
     &.poblavallbona,
     &.galipont-torre,
+    &.leliana,
     &.montesol,
     &.elclot,
     &.entrepins,
     &.lavallesa,
+    &.lacanyada,
     &.fuentejarro,
-    &.santarita {
-        font-weight: var(--font-light);
+    &.santarita,
+    &.campament,
+    &.carolines-fira,
+    &.benimamet, 
+    &.cantereria {
 
         .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            right: 2.5px;
-
-            &::before {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                right: 2px;
-                z-index: -1;
-            }
+            --dot-x: -3px;
+            --tick-right: 2px; 
         }
-
         .station-name {
             margin-right: 17px;
             margin-left: 5px;
@@ -481,110 +176,54 @@
         }
 
         .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            right: 2px;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                right: 2px;
-                z-index: -1;
-            }
+            --dot-x: -3px;
+            --tick-right: 2px; 
         }
     }
+
     &.benaguasil {
         margin-top: 5px;
     }
-    &.fondo-benaguasil {
+    &.fondo-benaguasil,
+    &.poblavallbona,
+    &.leliana,
+    &.elclot,
+    &.entrepins,
+    &.lacanyada,
+    &.fuentejarro,
+    &.santarita,
+    &.campament,
+    &.benimamet, 
+    &.cantereria {
         margin-top: 3px;
     }
-    &.poblavallbona {
-        margin-top: 3px;
-    }
-    &.galipont-torre {
-        margin-top: 4px;
-    }
-    &.leliana {
-        margin-top: 3px;
-    }
+    &.galipont-torre,
     &.montesol {
         margin-top: 4px;
     }
-    &.elclot {
-        margin-top: 3px;
-    }
-    &.entrepins {
-        margin-top: 3px;
-    }
     &.lavallesa {
-        margin-top: 52px;
-    }
-    &.lacanyada {
-        margin-top: 3px;
-    }
-    &.fuentejarro {
-        margin-top: 3px;
-    }
-    &.santarita {
-        margin-top: 3px;
-    }
-    &.campament {
-        margin-top: 03px;
+        margin-top: 53px;
     }
     &.carolines-fira {
         margin-top: 27px;
     }
-    &.benimamet {
-        margin-top: 3px;
-    }
-    &.cantereria {
-        margin-top: 3px;
-    }
 
-    /* línia 4 */
+    /* --- linea 4 --- */
     &.fira-vlc {
-        
-        .station-name {
-            font-weight: var(--font-bold);
-            text-transform: uppercase;
-            line-height: 15px;
-            width: 72px;
-            margin-top: 7px;
-            margin-left: 15px;
+
+        .dot { 
+            --tick-w: 8px; 
+            --tick-h: 6px; 
+            --tick-top: 0.5px; 
+            --tick-left: 9px; 
         }
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 4.5px var(--color-line-4);
-            width: 7px;
-            height: 7px;
-            border-radius: 12px;
-            position: relative;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 8px;
-                height: 6px;
-                position: absolute;
-                top: 0.5px;
-                left: .6rem;
-                z-index: -1;
-            }
+        .station-name { 
+            font-weight: var(--font-bold); 
+            text-transform: uppercase; 
+            line-height: 15px; 
+            width: 72px; 
+            margin-top: 7px; 
+            margin-left: 15px; 
         }
     }
     &.llomallarga-terramelar {
@@ -593,33 +232,18 @@
         flex-direction: column-reverse;
         gap: 14px;
 
-        .station-name {
+        .dot { 
+            --dot-y: -2px;
+            --tick-top: auto;
+            --tick-w: 6px;
+            --tick-h: 7px;
+            --tick-bottom: 10px;
+            --tick-left: 0px;
+        }
+        .station-name { 
             line-height: 15px;
             text-align: center;
             width: 120px;
-        }
-
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 4.5px var(--color-line-4);
-            width: 7px;
-            height: 7px;
-            border-radius: 12px;
-            position: relative;
-            bottom: 1px;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 6px;
-                height: 7px;
-                position: absolute;
-                bottom: 10px;
-                left: 0.5px;
-                z-index: -1;
-            }
         }
     }
     &.mas-rosari {
@@ -627,102 +251,65 @@
         text-transform: uppercase;
         margin-top: 27px;
 
-        .dot {
-            background-color: var(--color-full-white);
-            border: 1.5px solid var(--color-full-black);
-            box-shadow: 0 0 0 4.5px var(--color-line-4);
-            width: 7px;
-            height: 7px;
-            border-radius: 12px;
-            position: relative;
-            left: 2px;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 6px;
-                position: absolute;
-                top: 1px;
-                left: 8px;
-                z-index: -1;
-            }
+        .dot { 
+            --dot-x: 2px; 
+            --tick-h: 6px; 
+            --tick-top: 1px; 
+            --tick-left: 8px; 
         }
-
-        .station-name {
-            margin-left: 14px;
+        .station-name { margin-left: 14px; 
         }
     }
-
-    &.lacoma,
-    &.tomas-valiente {
-        font-weight: var(--font-light);
-
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 4.5px;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
-    }
-
     &.lacoma {
-        margin-top: 5px;
+
+        .dot { 
+            --dot-x: 5px;
+            --tick-left: 2px; 
+        }
+        .station-name { 
+            margin-left: 18px; 
+        }
     }
     &.tomas-valiente {
-         margin-top: 3px;
+
+        .dot { 
+            --dot-x: 5px;
+            --tick-left: 2px; 
+        }
+        .station-name { 
+            margin-left: 18px; 
+        }
     }
     &.parc-cientific {
-        font-weight: var(--font-light);
         flex-direction: column-reverse;
         position: absolute;
         right: 141px;
         top: 114px;
         width: 100px;
 
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                height: 7px;
-                width: 4px;
-                position: absolute;
-                bottom: 2px;
-                right: -1px;
-                z-index: -1;
-            }
+        .dot { 
+            --tick-top: auto; 
+            --tick-w: 4px; 
+            --tick-h: 7px; 
+            --tick-bottom: 2px; 
+            --tick-right: -1px; 
+            --dot-y: 1px;
         }
+        .station-name { 
+            position: relative; 
+            bottom: 8px; 
+        }
+    }
 
-        .station-name {
-            position: relative;
-            bottom: 8px;
+    &.apunt {
+        margin-top: 1px;
+        
+        .dot { 
+            --dot-x: 2px; 
+            --tick-left: 2px; 
+        }
+        .station-name { 
+            margin-left: 18px; 
         }
     }
 
@@ -733,82 +320,82 @@
         position: relative;
         z-index: 1;
 
-        .station-name {
-            margin-right: 3px;
+        .dot { 
+            --dot-y: -2px; 
+            --dot-x: 2px; 
+            --tick-left: 2px; 
         }
-
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: -2px;
-            left: 2px;
-            
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
+        .station-name { 
+            margin-right: 3px; 
+            margin-left: 18px; 
         }
     }
 
-    &.apunt,
-    &.campus,
-    &.santjoan,
-    &.lagranja,
+    &.campus {
+        margin-top: 4px;
+        
+        .dot { 
+            --dot-x: 2px;
+            --tick-left: 2px; 
+        }
+        .station-name { 
+            margin-left: 18px; 
+        }
+    }
+
+    &.santjoan {
+        margin-top: 3px;
+        
+        .dot { 
+            --dot-x: 2px;
+            --tick-left: 2px; 
+        }
+        .station-name { 
+            margin-left: 18px; 
+        }
+    }
+
+    &.lagranja {
+        margin-top: 3px;
+
+        .dot { 
+            --dot-x: 2px;
+            --tick-left: 2px; 
+        }
+        .station-name { 
+            margin-left: 18px; 
+        }
+    }
+
     &.palau-congresos {
-        font-weight: var(--font-light);
+        margin-top: 138px;
 
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: 2px;
-            height: 2px;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 1.5px;
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
+        .dot { 
+            --dot-x: 2px;
+            --tick-left: 2px; 
+        }
+        .station-name { 
+            line-height: 12px; 
+            width: 60px; 
+            margin-left: 18px; 
         }
     }
 
+    &.lacoma {
+        margin-top: 5px;
+    }
     &.apunt {
         margin-top: 1px;
     }
     &.campus {
         margin-top: 4px;
     }
-    &.santjoan {
-        margin-top: 3px;
-    }
-    &.lagranja {
+    &.santjoan,
+    &.lagranja,
+    &.tomas-valiente {
         margin-top: 3px;
     }
     
-
     &.lacoma,
     &.tomas-valiente,
     &.apunt,
@@ -821,40 +408,12 @@
             margin-left: 18px;
         }
     }
-    
-    
 
-     /* &.empalme  {
+    /* &.empalme  {
         font-weight: var(--font-bold);
         text-transform: uppercase;
         position: relative;
         z-index: 1;
-
-        .dot {
-            background-color: var(--color-full-black);
-            border: 1.5px solid var(--color-full-white);
-            box-shadow: 0 0 0 1.5px var(--color-full-black);
-            width: .15rem;
-            height: .15rem;
-            border-radius: 12px;
-            position: relative;
-            top: 0;
-            left: 2px;
-            margin-right: .7rem;
-            
-
-            &::after {
-                content: "";
-                background-color: var(--color-full-black);
-                border-radius: 4px;
-                width: 7px;
-                height: 4px;
-                position: absolute;
-                top: -.75px;
-                left: 2px;
-                z-index: -1;
-            }
-        }
     } */
 
     &.palau-congresos {
