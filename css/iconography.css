@@ -63,7 +63,7 @@
   border-bottom: 3px solid var(--color-full-black);
 }
 
-.pasarela-wiparking-icon {
+.pasarela-wip-icon {
   background-color: var(--color-full-white);
   width: 4rem;
   height: .5rem;
@@ -71,7 +71,7 @@
   border-bottom: 3px dashed var(--color-full-black);
 }
 
-.pasarela-trametro-icon {
+.pasarela-tram-icon {
   background-color: var(--color-full-white);
   width: 4rem;
   height: .5rem;
@@ -79,7 +79,7 @@
   border-bottom: 3px solid var(--color-line-4b);
 }
 
-.parada-comparking-icon {
+.parada-comp-icon {
   background-color: var(--color-full-white);
   width: 3.5rem;
   height: .6rem;
